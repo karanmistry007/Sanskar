@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elixir</title>
+
+    <!-- tailwind link  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- font awesome link  -->
+    <script src="https://kit.fontawesome.com/97238f579d.js" crossorigin="anonymous"></script>
+
+    <!-- javascript link  -->
+    <script src="main.js" defer></script>
+    <script src="slider.js" defer></script>
+</head>
+<body>
+    <!-- info section  -->
+    <section id="info" class="hidden sm:block bg-[#2A3855] p-5 text-white text-xs font-semibold">
+        <div class="max-w-6xl m-auto flex justify-center gap-5 md:justify-evenly lg:justify-center">
+            <div class="info-item hidden lg:block order-1">
+                <i class="fa-solid fa-location-dot text-yellow-400"></i>
+                <span>1010 Avenue, New York, NY 10018 US. </span>
+            </div>
+            <div class="info-item order-2 md:order-2 lg:flex-grow">
+                <i class="fa-solid fa-phone text-yellow-400"></i>
+                <span>212 386 5575, 212 386 5576</span>
+            </div>
+            <div class="info-item order-1 md:order-3">
+                <i class="fa-solid fa-clock text-yellow-400"></i>
+                <span>Mon-Sat, 8.00-18.00. Sunday CLOSED</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- navbar  -->
+    <header id="navbar" class="shadow-2xl">
+        <nav class="flex justify-between lg:justify-center gap-5 items-center p-3.5 max-w-lg md:max-w-2xl lg:max-w-6xl m-auto font-medium text-[#2a3855]">
+            <div class="logo">
+                <img src="images/logo-dark.png" alt="">
+            </div>
+
+            <div class="burger block lg:hidden">
+                <div class="line h-0.5 w-7 my-1.5 bg-black"></div>
+                <div class="line h-0.5 w-7 my-1.5 bg-black"></div>
+                <div class="line h-0.5 w-7 my-1.5 bg-black"></div>
+            </div>
+
+            <div class="nav-list hidden lg:block lg:flex-grow">
+                <ul class="list flex gap-5">
+                    <li class="dropdown1">
+                        <a href=""><span>Home</span><i class="fa-solid fa-chevron-down fa-xs align-middle"></i></a>
+                        <ul class="dropdown-item1 absolute bg-white shadow-2xl z-[100] text-xs hidden flex-col gap-2 p-4 text-black font-normal">
+                            <li><a href="">Slider Head</a></li>
+                            <li><a href="">Slider Classic</a></li>
+                            <li><a href="">Static Header</a></li>
+                            <li><a href="">Static Classic</a></li>
+                            <li><a href="">Youtube Background</a></li>
+                            <li><a href="">Youtube Classic</a></li>
+                            <li><a href="">Self-Hosted Video</a></li>
+                            <li><a href="">Self-Hosted Classic</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown2">
+                        <a href=""><span>Pages</span><i class="fa-solid fa-chevron-down fa-xs align-middle"></i></a>
+                        <ul class="dropdown-item2 absolute bg-white shadow-2xl z-[100] text-xs hidden flex-col gap-2 p-4 text-black font-normal">
+                            <li><a href="">Services</a></li>
+                            <li><a href="">About</a></li>
+                            <li><a href="">Alumni</a></li>
+                            <li><a href="">Blank Page</a></li>
+                            <li><a href="">404 Page</a></li>
+                            <li><a href="">Login</a></li>
+                            <li><a href="">Registration</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown3">
+                        <a href=""><span>News</span><i class="fa-solid fa-chevron-down fa-xs align-middle"></i></a>
+                        <ul class="dropdown-item3 absolute bg-white shadow-2xl z-[100] text-xs hidden flex-col gap-2 p-4 text-black font-normal">
+                            <li><a href="">News Room</a></li>
+                            <li><a href="">Single News</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown4">
+                        <a href=""><span>Elements</span><i class="fa-solid fa-chevron-down fa-xs align-middle"></i></a>
+                        <ul class="dropdown-item4 absolute bg-white shadow-2xl z-[100] text-xs hidden flex-col gap-2 p-4 text-black font-normal">
+                            <li><a href="">Buttons</a></li>
+                            <li><a href="">Colors</a></li>
+                            <li><a href="">Google Maps</a></li>
+                            <li><a href="">Grid</a></li>
+                            <li><a href="">Icons</a></li>
+                            <li><a href="">Layout Helpers</a></li>
+                            <li><a href="">Modal Video</a></li>
+                            <li><a href="">Swiper</a></li>
+                            <li><a href="">Typography</a></li>
+                        </ul>
+                    </li>
+                    <li class="normal">
+                        <a href="">Contact</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="purchase hidden lg:block">
+                <button class="outline rounded-2xl px-4 py-1 text-sm outline-2" >Purchase</button>
+            </div>
+        </nav>
+    </header>
+</body>
+</html>
