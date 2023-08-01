@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-[url('background.jpg')] bg-cover bg-fixed bg-no-repeat">
+    <!-- navbar -->
+    <div
+      class="bg-center bg-cover border-bottom-solid border-b-2 border-orange-500 bg-white"
+    >
+      <nav class="flex gap-20 items-center p-1 text-lg">
+        <img class="h-20 w-30 pl-10" src="logo.png" />
+        <ul class="flex-1 ml-64">
+          <li
+            class="hover:text-orange-500 hover:underline underline-offset-8 decoration-2 ease-in-out duration-200 inline-block px-8"
+          >
+            <a href="#">Home</a>
+          </li>
+          <li
+            class="hover:text-orange-500 hover:underline underline-offset-8 decoration-2 ease-in-out duration-200 inline-block px-8"
+          >
+            <a href="#">About</a>
+          </li>
+          <li
+            class="hover:text-orange-500 hover:underline underline-offset-8 decoration-2 ease-in-out duration-200 inline-block px-8"
+          >
+            <a href="#">Features</a>
+          </li>
+          <li
+            class="hover:text-orange-500 hover:underline underline-offset-8 decoration-2 ease-in-out duration-200 inline-block px-8"
+          >
+            <a href="#">Contact</a>
+          </li>
+        </ul>
+        <a
+          href="#"
+          class="hover:text-orange-500 hover:underline underline-offset-8 decoration-2 ease-in-out duration-200 inline-block"
+          >Cart</a
+        >
+        <a
+          href="#"
+          class="pr-10 hover:text-orange-500 hover:underline underline-offset-8 decoration-2 ease-in-out duration-200 inline-block"
+          >User</a
+        >
+      </nav>
+    </div>
+    <!-- end of navbar -->
+
+    <!-- main  -->
+    <h1
+      class="text-5xl text-white my-10 font-bold mx-auto items-center text-center underline decoration-orange-500 underline-offset-8"
+    >
+      Great Times
+    </h1>
+    <h1 class="text-3xl my-10 font-bold mx-auto text-center">Create Account</h1>
+
+    <!-- <div class="p-6 max-w-sm mx-auto bg-white rounded-xl shadow-lg flex my-3 items-center space-x-4">
+    <div class="shrink-0">
+      <img class="h-10 w-10" src="logo.png">
+      
+    </div>
+    <div>
+      <div class="text-xl font-medium text-black">ChitChat</div>
+      <p class="text-slate-500">You have a new message!</p>
+    </div>
+  </div> -->
+
+    <form class="flex flex-col justify-center items-center">
+      <div
+        class="p-16 pb-12 bg-white backdrop-blur-sm bg-opacity-20 shadow-4xl border-solid border-orange-500 mx-auto rounded-2xl"
+      >
+        <label class="block">
+          <span class="block text-lg font-medium">Username :</span>
+          <input
+            type="text"
+            class="p-2 rounded-lg peer ... mb-8 border-solid border-orange-500 border-2 w-96"
+            placeholder="Enter Name"
+          />
+        </label>
+
+        <label class="block">
+          <span class="block text-lg font-medium">Email :</span>
+          <input
+            type="email"
+            class="p-2 rounded-lg peer ... border-solid border-orange-500 border-2 w-96"
+            placeholder="Enter E-Mail"
+          />
+          <p class="mt-2 invisible peer-invalid:visible text-red-600 text-sm">
+            Please provide a valid email address.
+          </p>
+        </label>
+
+        <label>
+          <span class="block text-lg font-medium">Password :</span>
+          <input
+            type="password"
+            class="p-2 rounded-lg peer ... border-solid border-orange-500 border-2 w-96"
+            placeholder="Enter Password"
+          />
+        </label>
+        <button
+          class="p-1.5 px-3 mt-10 flex max-w-sm mx-auto rounded-lg text-lg items-center shadow-lg text-white bg-orange-500 hover:bg-white hover:text-orange-500 active:bg-orange-700 focus:outline-none focus:ring focus:ring-orange-300 ..."
+        >
+          Save changes
+        </button>
+      </div>
+    </form>
+  </body>
+</html>

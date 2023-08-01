@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo-2</title>
+    
+<!-- stylesheet  -->
+    <link rel="stylesheet" href="style.css" class="rel">
+    
+<!-- font awesome  -->
+  <script src="https://kit.fontawesome.com/97238f579d.js" crossorigin="anonymous"></script>
+
+  <!-- Boostrap link  -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous" />
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
+
+
+
+</head>
+<body>
+    <header id="header">
+        <nav class="navbar navbar-expand-lg navbar-light z-3 w-100 p-0 pt-1 pb-1" >
+            <div class="container-fluid flex-shrink-5">
+              <a class="navbar-brand mx-3  mx-xl-5 " href="#"><img class="mx-0 mx-sm-3  mx-xl-5  w-auto h-auto logo" src="images/logo.png" alt="" ></a>
+              <button class="navbar-toggler border-0 " id="burger-cont" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <div >
+                <div id="line-1" class="lines"></div>
+                <div id="line-2" class="lines"></div>
+                <div id="line-3" class="lines"></div>
+              </div>
+              </button>
+                </div>
+              <div class="container-fluid font-med">
+              <div class="collapse navbar-collapse align-content-center justify-content-evenly align-items-center" id="navbarNavDropdown">
+                <ul class="navbar-nav text-center">
+                  <li class="nav-item mx-2 mx-xl-3">
+                    <a class="nav-link  orange" id="home-btn" aria-current="page" href="#top">Home</a>
+                  </li>
+                  <li class="nav-item mx-2 mx-xl-3">
+                    <a class="nav-link text-white orange" id="services-btn" href="#services-scroll">Services</a>
+                  </li>
+                  <li class="nav-item mx-2 mx-xl-3">
+                    <a class="nav-link text-white orange" id="about-btn" href="#about-scroll">About</a>
+                  </li>
+                  <li class="nav-item dropdown  mx-2 mx-xl-3 ">
+                    <a class="nav-link dropdown-toggle text-white orange" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Pages
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <li><a class="dropdown-item text-white text-center  font-med" href="#">About Us</a></li>
+                      <li><a class="dropdown-item text-white text-center font-med" href="#">Our Services</a></li>
+                      <li><a class="dropdown-item text-white text-center font-med" href="#">Contact Us</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item  mx-2 mx-xl-3">
+                    <a class="nav-link text-white orange" id="testimonials-btn" href="#testimonials-scroll">Testimonials</a>
+                  </li>
+                  <li class="nav-item pb-3 pb-xl-0  mx-2 mx-xl-3">
+                    <button type="button" class="btn btn-success">Contact Support</button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+
+
+
+<!-- main section  -->
+    <main>
+
+<!-- carousel slider  -->
+        <section id="slider">
+          <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="images/slide-01.jpg" class="d-block caro-img" alt="...">
+                  <div class="carousel-caption d-block align-middle text-center  text-md-start ">
+                    <h1 class="caro-head"><b>Get <span class="orange">ready</span> for your business &
+                      upgrade <span class="orange">all aspects</span></b></h1>
+                    <div class="m-auto mx-md-0  mt-5 mb-5 d-block" id="ul-1"></div>
+                    <p class="d-none  d-md-block ">Mexant HTML5 Template is provided for free of charge. This
+                      layout is based on Boostrap 5 CSS framework. Anyone can
+                      download and edit for any professional website. Thank you for
+                      visiting TemplateMo website.</p>
+                    <div class="d-flex justify-content-center justify-content-md-start  ">
+                      <button type="button" class="btn btn-success p-2 px-3">Discover More</button>
+                      <button type="button" class="btn text-white bg-orange p-2 px-3 mx-3">Contact Us</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="images/slide-02.jpg" class="d-block caro-img" alt="...">
+                  <div class="carousel-caption d-block align-middle text-center  text-md-start">
+                    <h1 class="caro-head"><b><span class="orange">Digital</span> Currency for you & Best
+                      upgrade <span class="orange">Crypto</span> Tips</b></h1>
+                      <div class="m-auto mx-md-0  mt-5 mb-5 d-block" id="ul-1"></div>
+                    <p class="d-none  d-md-block ">You will see a bunch of free CSS templates when you search on Google. TemplateMo website is probably the
+                      best one because it is 100% free. It does not ask you anything in return. You have a total freedom to
+                      use any template for any purpose.</p>
+                      <div class="d-flex justify-content-center justify-content-md-start  ">
+                        <button type="button" class="btn btn-success p-2 px-3">Discover More</button>
+                        <button type="button" class="btn text-white bg-orange p-2 px-3 mx-3">Contact Us</button>
+                      </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="images/slide-03.jpg" class="d-block caro-img" alt="...">
+                  <div class="carousel-caption d-block align-middle text-center  text-md-start">
+                    <h1 class="caro-head"><b>Best One in town & Crypto <span class="orange">Services</span></b></h1>
+                    <div class="m-auto mx-md-0  mt-5 mb-5 d-block" id="ul-1"></div>
+                    <p class="d-none  d-md-block ">When you browse through different tags on TemplateMo website, you can see a variety of CSS templates
+                      which are responsive website designs for different individual needs. Please tell your friends about our
+                      website. Thank you.</p>
+                      <div class="d-flex justify-content-center justify-content-md-start  ">
+                        <button type="button" class="btn btn-success p-2 px-3">Discover More</button>
+                        <button type="button" class="btn text-white bg-orange p-2 px-3 mx-3">Contact Us</button>
+                      </div>
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+        </section>
+<!-- grid section -->
+
+<div id="services-scroll"></div>
+<br><br>
+        <section class="my-5" id="grid">
+          <div class="container text-left">
+            <div class="row">
+              <div class="col col-lg-5   d-flex align-items-center p-4 m-3 ">
+                <div class="grid-icon display-3  mx-3 green">
+                  <i class="fas fa-archive"></i>
+                </div>
+                <div class="grid-text mx-1">
+                  <h4>CSS Templates</h4>
+                  <p>
+                    TemplateMo website is the best for you to explore and download free website templates.
+                  </p>
+                </div>
+              </div>
+              <div class="col col-lg-5   d-flex align-items-center p-4 m-3 ">
+                <div class="grid-icon display-3 mx-3 green">
+                  <i class="fas fa-cloud"></i>
+                </div>
+                <div class="grid-text mx-1">
+                  <h4>HTML5 Web Pages</h4>
+                  <p>
+                    Templates are based on Bootstrap 5 CSS framework. You can easily adapt or modify based on your needs.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col col-lg-5   d-flex align-items-center p-4 m-3 ">
+                <div class="grid-icon display-3 mx-3 green">
+                  <i class="fas fa-charging-station"></i>
+                </div>
+                <div class="grid-text mx-1">
+                  <h4>Responsive Designs</h4>
+                  <p>
+                    All of our css templates are 100% free to use for commercial or
+                    business websites.
+                  </p>
+                </div>
+              </div>
+              <div class="col col-lg-5   d-flex align-items-center p-4 m-3 ">
+                <div class="grid-icon display-3 mx-3 green">
+                  <i class="fas fa-suitcase"></i>
+                </div>
+                <div class="grid-text mx-1">
+                  <h4>Mobile and Tablet ready!</h4>
+                  <p>
+                    Our HTML and CSS templates are well tested on mobile, tablet and
+                    desktop comptability.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col col-lg-5   d-flex align-items-center p-4 m-3 ">
+                <div class="grid-icon display-3 mx-3 green">
+                  <i class="fas fa-archway"></i>
+                </div>
+                <div class="grid-text mx-1">
+                  <h4>Fast Customer Support</h4>
+                  <p>
+                    Do Not be hesitate to contact us if you have any question of
+                    concern about our templates.
+                  </p>
+                </div>
+              </div>
+              <div class="col col-lg-5   d-flex align-items-center p-4 m-3 ">
+                <div class="grid-icon display-3 mx-3 green">
+                  <i class="fas fa-puzzle-piece"></i>
+                </div>
+                <div class="grid-text mx-1">
+                  <h4>Full customizable</h4>
+                  <p>
+                    If you have any ideas and suggestion about new templates, feel
+                    free to let us know.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+<!-- cta section  -->
+        <section class="my-5 " id="cta">
+          <div class="container d-flex flex-column flex-md-row  justify-content-evenly align-items-center ">
+            <div class="cta-text text-white">
+              <h1><b>Business <span class="green">Solutions</span> and <span class="orange">Crypto</span> Invesments</b></h1>
+            </div>
+            <div class="cta-btn text-center ">
+              <button type="button" class="btn btn-success p-2 px-3">Discover More</button>
+              <button type="button" class="btn text-white bg-orange p-2 px-3 mx-3">Contact Us</button>
+            </div>
+          </div>
+        </section>
+
+
+<!-- about us section -->
+<div id="about-scroll"></div>
+<br><br>
+        <section id="about">
+          <div class="container mt-5 mb-5 ">
+            <div class="about-head text-center ">
+              <h6 class="orange">ABOUT US</h6>
+              <h1 class="darkb">Know Us Better</h1>
+            </div>
+            <div class="container">
+              <div class="row flex-column flex-md-row">
+                <div class="col col-lg-7 ">
+                  <div id="about-btn" class="d-flex flex-column flex-lg-row  justify-content-evenly align-content-between   align-items-center mx-5 my-4">
+                    <button class="btn p-3 px-4 m-2 orange" id="btn-1" onclick="table1()">Web Design</button>
+                    <button class="btn p-3 px-4 m-2 " id="btn-2" onclick="table2()">Graphics</button>
+                    <button class="btn p-3 px-4 m-2  " id="btn-3" onclick="table3()">Web Coding</button>
+                  </div>
+                  <div class="overflow-x-auto d-flex justify-content-between   justify-content-sm-evenly w-100" id="tables">
+                   
+                      <table id="table1">
+                        <tr>
+                          <th>Project title</th>
+                          <th>Budget</th>
+                          <th>Deadline</th>
+                          <th>client</th>
+                        </tr>
+                        <tr>
+                          <td class="green">Website Redesing</td>
+                          <td>$1,500 to $2,200</td>
+                          <td>2022 Dec 12</td>
+                          <td>Web Biz</td>
+                        </tr>
+                        <tr>
+                          <td class="green">Website Renovation</td>
+                          <td>$2,500 to $3,600</td>
+                          <td>2022 Dec 10</td>
+                          <td>Online Ads</td>
+                        </tr>
+                        <tr>
+                          <td class="green">Marketing Plan</td>
+                          <td>$2,500 to $4,200</td>
+                          <td>2022 Dec 8</td>
+                          <td>Web Biz</td>
+                        </tr>
+                        <tr>
+                          <td class="green">All-new Website</td>
+                          <td>$3,000 to $6,600</td>
+                          <td>2022 Dec 2</td>
+                          <td>Web Presence</td>
+                        </tr>
+                      </table>
+        
+                      <table id="table2">
+                        <tr>
+                          <th>Project title</th>
+                          <th>Budget</th>
+                          <th>Deadline</th>
+                          <th>client</th>
+                        </tr>
+                        <tr>
+                          <td class="green">Graphics Redesign</td>
+                          <td>$500 to $800</td>
+                          <td>2022 Nov 24</td>
+                          <td>Media One</td>
+                        </tr>
+                        <tr>
+                          <td class="green">Digital Graphics</td>
+                          <td>$1,500 to $3,000</td>
+                          <td>2022 Nov 18</td>
+                          <td>Second Media</td>
+                        </tr>
+                        <tr>
+                          <td class="green">New Artworks</td>
+                          <td>$2,200 to $4,400</td>
+                          <td>2022 Nov 10</td>
+                          <td>Artwork Push</td>
+                        </tr>
+                        <tr>
+                          <td class="green">Complex Arts</td>
+                          <td>$1,100 to $2,400</td>
+                          <td>2022 Nov 3</td>
+                          <td>Media One</td>
+                        </tr>
+                      </table>
+        
+                      <table id="table3">
+                        <tr>
+                          <th>Project title</th>
+                          <th>Budget</th>
+                          <th>Deadline</th>
+                          <th>client</th>
+                        </tr>
+                        <tr>
+                          <td class="green">Backend Coding</td>
+                          <td>$2,000 to $5,000</td>
+                          <td>2022 Nov 28</td>
+                          <td>PHP MySQL</td>
+                        </tr>
+                        <tr>
+                          <td class="green">New Web App</td>
+                          <td>$1,500 to $3,000</td>
+                          <td>2022 Nov 18</td>
+                          <td>Python Programming</td>
+                        </tr>
+                        <tr>
+                          <td class="green">Frontend Interactions</td>
+                          <td>$3,000 to $6,000</td>
+                          <td>2022 Nov 10</td>
+                          <td>JavaScripts</td>
+                        </tr>
+                        <tr>
+                          <td class="green">Video Creations</td>
+                          <td>$1,800 to $4,400</td>
+                          <td>2022 Nov 3</td>
+                          <td>Multimedia</td>
+                        </tr>
+                      </table>
+                    </div>
+                </div>
+                <div class="col col-md-4 mt-5 ">
+                  <h4 class="thick">
+                    Please Tell us about your idea and how you want it to be
+                  </h4>
+                  <br />
+                  <p>
+                    You are allowed to use this template for your websites. You are
+                    <span class="thick d-blue">Not allowed</span>
+                    to redistribute the template zip file on any other template
+                    websites.
+                  </p>
+                  <br />
+                  <p>
+                    Thank you for downloading and using our templates. Please tell
+                    your friends about our website.
+                  </p>
+                  <button type="button" class="btn btn-success p-2 px-3">Discover More</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+<!-- calculator section          -->
+        <section id="calculator" class="">
+          <div class="container text-white mt-5  mb-5 ">
+            <div class="row">
+              <div class="col d-none d-xl-block ">
+                <img class="" src="images/calculator-image.png" alt="" >
+              </div>
+              <div class="col-12    col-xl-4   ">
+                <form action="" class="calc">
+                  <div class="container d-flex flex-wrap align-items-center align-content-center  justify-content-evenly">
+                    <div class="row mt-5 ">
+                      <div class="col mt-5">
+                        <h6 class="orange ">YOUR FREEDOM</h6>
+                        <h1><b> A Financial Plan</b></h1>
+                      </div>
+                    </div>
+                    <div class="row my-3 ">
+                      <div class="col px-0 " style="margin-right: 1rem;">
+                        <label>Your Name</label>
+                        <input type="text" name="name" class="form-control" required>
+                      </div>
+                      <div class="col pr-0" >
+                        <label>Your Email</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="" required>
+                      </div>
+                    </div>
+                    <div class="row my-3 ">
+                      <label>Subject</label>
+                      <input type="text" name="subject" class="form-control" required>
+                    </div>
+                    <div class="row my-3 ">
+                      <label>Your Reason</label>
+                      <select name="select" id="select">
+                        <option >Choose an option</option>
+                        <option >Online Banking</option>
+                        <option >Financial Control</option>
+                        <option >Yearly Profit</option>
+                        <option >Crypto Invesment</option>
+                      </select>
+                    </div>
+                    <div class="row my-3 mw-140">
+                      <button type="submit" class="btn bg-orange text-white py-2 my-3 ">Submit Now</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+
+<!-- testimonials section  -->
+<div id="testimonials-scroll"></div>
+<br><br>
+        <section id="testimonials">
+          <div class="mt-5 mb-5  ">
+            <div class="row text-center">
+              <h6 class="orange">TESTIMONIALS</h6>
+              <h1 class="darkb">What They Say</h1>
+            </div>
+            <div class="row text-start text-black   ">
+
+              <!-- Carousel -->
+              <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+                <!-- Indicators/dots -->
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                  <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                  <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+                </div>
+
+                <!-- The slideshow/carousel -->
+                <div class="carousel-inner ">
+                  <div class="carousel-item active">
+                    <div class="container box-shadow rounded-3 my-5 w-90 ">
+                      <div class="row justify-content-evenly  align-items-center ">
+                        <div class="col p-4 p-sm-5 pb-4">
+                          <i class="fa fa-quote-left testi-icon"></i>
+                          <p class="mt-2">
+                            “Donec et nunc massa. Nullam non felis dignissim, dapibus turpis semper, vulputate lorem. Nam volutpat posuere tellus,in porttitor justo interdum nec. Aenean indapibus risus, in euismod ligula. Aliquam vel scelerisque elit.”
+                          </p>
+                          <h4>
+                            David Eigenberg
+                          </h4>
+                          <h6 class="green">
+                            CEO of Mexant 
+                          </h6>
+
+                        </div>
+                        <div class="col-9 col-md-6  col-lg-5 col-xl-4 col-xxl-3 p-3 p-lg-0 ">
+                          <img class="w-100 testi-img" src="images/testimonials-01.jpg" alt="" >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="container box-shadow rounded-3 my-5 w-90 ">
+                      <div class="row justify-content-evenly  align-items-center ">
+                        <div class="col p-4 p-sm-5 pb-4 ">
+                          <i class="fa fa-quote-left testi-icon"></i>
+                          <p class="mt-2">
+                            “Etiam id ligula risus. Fusce fringilla nisl nunc, nec rutrum lectus cursus nec. In blandit nibh dolor, at rutrum leo accumsan porta. Nullam pulvinar eros porttitor risus condimentum tempus.”
+                          </p>
+                          <h4>
+                            Andrew Garfield
+                          </h4>
+                          <h6 class="green">
+                            CTO of Mexant
+                          </h6>
+
+                        </div>
+                        <div class="col-9 col-md-5  col-lg-5 col-xl-4 col-xxl-3 p-3 p-lg-0 ">
+                          <img class="w-100 testi-img" src="images/testimonials-01.jpg" alt="" >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="container box-shadow rounded-3 my-5 w-90 ">
+                      <div class="row justify-content-evenly  align-items-center ">
+                        <div class="col p-4 p-sm-5 pb-4 ">
+                          <i class="fa fa-quote-left testi-icon"></i>
+                          <p class="mt-2">
+                            “Ut dictum vehicula massa, ac pharetra leo tincidunt eu. Phasellus in tristique magna, ac gravida leo. Integer sed lorem sapien. Ut viverra mauris sed lobortis commodo.”                 
+                          </p>
+                          <h4>
+                            George Lopez
+                          </h4>
+                          <h6 class="green">
+                            Crypto Manager 
+                          </h6>
+
+                        </div>
+                        <div class="col-9 col-md-6  col-lg-5 col-xl-4 col-xxl-3 p-3 p-lg-0 ">
+                          <img class="w-100 testi-img" src="images/testimonials-01.jpg" alt="" >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Left and right controls/icons -->
+                <!-- <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                  <span class="carousel-control-next-icon"></span>
+                </button> -->
+              </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+<!-- company section  -->
+        <section id="company" class="mt-5 py-4 ">
+          <div class="container d-flex flex-column flex-lg-row  justify-content-evenly align-content-center align-items-center py-5 text-center ">
+            <div class="row-cols-auto ">
+            <img src="images/client-01.png" alt="">
+            <img src="images/client-01.png" alt="">
+            <img src="images/client-01.png" alt="">
+            <img src="images/client-01.png" alt="">
+            <img src="images/client-01.png" alt="">
+            <img src="images/client-01.png" alt="">
+          </div>
+          </div>
+        </section>
+
+    </main>
+
+
+    <!-- footer section          -->
+    <footer>
+      <div class="container  text-white text-center mb-0 pt-4 pb-2 ">
+        <p>
+          Copyright © 2022 Mexant Co., Ltd. All Rights Reserved.
+        </p>
+        <p>
+          Designed by <a href="" class="orange">TemplateMo</a>  Distributed By <a href="" class="orange">ThemeWagon</a> 
+        </p>
+      </div>
+    </footer>
+
+    <script src="main.js" ></script>
+    
+</body>
+</html>

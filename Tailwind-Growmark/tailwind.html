@@ -1,0 +1,1202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GrowMark - Digital Marketing HTML Template</title>
+    <!-- tailwind cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font awesome link  -->
+    <script src="https://kit.fontawesome.com/97238f579d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="temp.css">
+    <!-- css for carousel  -->
+
+
+</head>
+
+<body class="bg-gray-50">
+
+
+
+
+    <!-- poster -->
+    <section id="poster" class="bg-[#4761FF] hidden lg:block">
+        <div class="poster flex justify-around text-white items-center py-4 font-light">
+            <div class="logo text-3xl font-bold">
+                <h1>GrowMark</h1>
+            </div>
+            <div class="nav-list">
+                <ul class="flex gap-3 justify-center items-center">
+                    <li class="space-x-2">
+                        <i class="fa-solid fa-location-dot"></i> <span> 123 Street, New York, USA</span>
+                    </li>
+                    <li class="space-x-2">
+                        <i class="fa-solid fa-envelope"></i> <span> info@example.com</span>
+                    </li>
+                    <li class="space-x-2">
+                        <i class="fa-solid fa-phone"></i> <span> +012 345 67890</span>
+                    </li>
+                    <li class="h-8 w-8 text-lg bg-white rounded-full text-[#4761FF] flex justify-center items-center">
+                        <i class="fa-brands fa-facebook-f fa-sm "></i>
+                    </li>
+                    <li class="h-8 w-8 text-lg bg-white rounded-full text-[#4761FF] flex justify-center items-center">
+                        <i class="fa-brands fa-twitter "></i>
+                    </li>
+                    <li class="h-8 w-8 text-lg  bg-white rounded-full text-[#4761FF] flex justify-center items-center">
+                        <i class="fa-brands fa-linkedin-in fa-sm "></i>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- navbar -->
+    <header class="bg-white w-full z-[1000] shadow-xl" id="header">
+        <nav>
+            <div class="nav-container lg:flex justify-between items-center lg:justify-around p-1 md:p-2.5 lg:p-0">
+                <div class=" flex justify-between items-center lg:hidden">
+                    <div class="logo my-1.5 mx-5 text-3xl font-bold ">
+                        <h1>GrowMark</h1>
+                    </div>
+                    <div class="burger my-1.5 mx-5 " onclick="navToggle()">
+                        <div class="line-1 block h-0.5 w-6 m-1.5 bg-black"></div>
+                        <div class="line-2 block h-0.5 w-6 m-1.5 bg-black"></div>
+                        <div class="line-3 block h-0.5 w-6 m-1.5 bg-black"></div>
+                    </div>
+                </div>
+                <ul class="lg:gap-10 px-5 py-3 lg:px-0 lg:py-0 z-[1000] space-y-4 lg:space-y-0 text-lg lg:items-center flex-col hidden lg:flex lg:flex-row relative "
+                    id="nav-toggle">
+                    <hr class="w-[95%] mx-auto lg:hidden">
+                    <li><a href="" class="text-[#4761FF]">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Services</a></li>
+                    <li><a href="">Projects</a></li>
+                    <li class="cursor-pointer dropdown py-1 md:py-2.5 lg:py-6" onmouseover="dropshow()"
+                        onmouseleave="drophide()" onclick="dropclick()"><a>Pages</a> <i
+                            class="fa-solid fa-angle-down align-middle"></i>
+                        <ul class="hidden dropdown-list bg-purple-50 px-3 border flex-col lg:absolute lg:z-10 lg:top-[100%]  py-2 lg:px-6 font-light rounded-b-lg lg:bg-white "
+                            id="drop-item">
+                            <li><a href="">Features</a></li>
+                            <li><a href="">Our Team</a></li>
+                            <li><a href="">Testimonial</a></li>
+                            <li><a href="">Quotation</a></li>
+                            <li><a href="">404 Page</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+                <div class="quote-btn hidden lg:block">
+                    <button class="bg-[#4761FF] text-lg text-white px-3 py-2 rounded-3xl">Get A Quote</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+
+
+    <!-- slider  -->
+    <div class="slideshow-container overflow-hidden relative">
+        <div class="mySlides h-[450px] md:h-full md:w-full fade flex flex-col items-center ">
+            <img class="h-[100%] max-w-max md:w-full slide-image" src="img/carousel-1.jpg">
+            <div
+                class="slider-text-1 text-start absolute top-[20%] text-white left-[5%] lg:w-1/2 xl:top-[33.33%] lg:left-[15%]">
+                <h3 class="text-xl font-light sm:text-2xl md:text-3xl">Welcome to <span
+                        class="font-medium text-2xl sm:text-4xl md:text-5xl">GrowMark</span></h3>
+                <h1 class="text-4xl font-bold sm:text-6xl md:text-7xl">Unlock Your Business Growth</h1>
+                <button class="bg-blue-600 px-6 py-3 my-10 rounded-3xl text-lg">Explore More</button>
+            </div>
+        </div>
+
+        <div class="mySlides h-[450px] md:h-full md:w-full fade flex flex-col items-center">
+            <img class="h-[100%] max-w-max md:w-full slide-image" src="img/carousel-2.jpg">
+            <div
+                class="slider-text-2 text-end absolute top-[20%] text-white right-[5%] lg:w-1/2 xl:top-[33.33%] lg:right-[15%]">
+                <h3 class="text-xl font-light sm:text-2xl md:text-3xl">Welcome to <span
+                        class="font-medium text-2xl sm:text-4xl md:text-5xl">GrowMark</span></h3>
+                <h1 class="text-4xl font-bold sm:text-6xl md:text-7xl">Ready To Grow Your Business</h1>
+                <button class="bg-blue-600 px-6 py-3 my-10 rounded-3xl text-lg">Explore More</button>
+            </div>
+        </div>
+        <a class="btn-car prev cursor-pointer absolute top-[40%] z-50 left-[2%]  lg:left-[8%] text-white text-center rounded-full flex justify-center items-center bg-[#0065fd77] py-2 w-12 h-12 md:py-4 md:h-16 md:w-16 text-xl"
+            onclick="plusSlides(-1)"><i class="fa-solid fa-chevron-left"></i></a>
+        <a class="btn-car next cursor-pointer absolute top-[40%] z-50 right-[2%]  lg:right-[8%] text-white text-center rounded-full flex justify-center items-center bg-[#0065fd77] py-2 w-12 h-12 md:py-4 md:h-16 md:w-16 text-xl"
+            onclick="plusSlides(1)"><i class="fa-solid fa-chevron-right"></i></a>
+    </div>
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+    </div>
+    </div>
+
+
+    <!-- grid section  -->
+
+    <section id="grid">
+        <div class="grid-container flex flex-wrap lg:flex-nowrap my-20 mx-8 justify-center gap-1 ">
+            <div class="grid-item p-10 bg-white md:max-w-xs shadow-[0px_0px_10px_1px_rgba(0,0,0,0.05)]">
+                <img class="my-3" src="img/icon/icon-1.png" alt="">
+                <h1 class="text-xl font-medium my-3">Award Winning</h1>
+                <p class="font-light my-3">Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam</p>
+            </div>
+
+            <div class="grid-item p-10 bg-white md:max-w-xs shadow-[0px_0px_10px_1px_rgba(0,0,0,0.05)]">
+                <img class="my-3" src="img/icon/icon-2.png" alt="">
+                <h1 class="text-xl font-medium my-3">Professional Staff</h1>
+                <p class="font-light my-3">Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam</p>
+            </div>
+
+            <div class="grid-item  p-10 bg-white md:max-w-xs shadow-[0px_0px_10px_1px_rgba(0,0,0,0.05)]">
+                <img class="my-3" src="img/icon/icon-3.png" alt="">
+                <h1 class="text-xl font-medium my-3">Fair Prices</h1>
+                <p class="font-light my-3">Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam </p>
+            </div>
+
+            <div class="grid-item p-10 bg-white md:max-w-xs shadow-[0px_0px_10px_1px_rgba(0,0,0,0.05)]">
+                <img class="my-3" src="img/icon/icon-4.png" alt="">
+                <h1 class="text-xl font-medium my-3">24/7 Support</h1>
+                <p class="font-light my-3">Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- about section -->
+
+    <section id="about">
+        <div
+            class=" bg-[url('img/about.jpg')] bg-cover overflow-hidden flex flex-col justify-center items-center align-middle bg-center m-auto lg:flex-row lg:justify-between max-w-7xl">
+            <button onclick="modelDisplay()" class="m-16 rounded-full lg:m-24 xl:m-48 2xl:m-56 play-btn">
+                <img class="w-20" src="img/icon/play.png" alt="">
+            </button>
+
+            <!-- model section  -->
+            <div id="model"
+                class="hidden w-full h-full rounded-lg fixed top-[20%]  left-0 right-0 z-[2000]  justify-center items-center">
+                <div class="w-[90%] lg:w-[800px] h-full container mx-2 m-auto">
+                    <div class="close text-xl bg-white flex justify-end px-2 rounded-t-lg">
+                        <button onclick="modelDisplay()" class="close "><i class="fa-solid fa-xmark"></i></button>
+                    </div>
+                    <div class="model-item h-[40%] sm:h-[50%] md:h-[65%] lg:h-[450px]">
+                        <iframe class="w-full h-full rounded-b-lg" src="https://www.youtube.com/embed/ft30zcMlFao"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="about-text bg-white mx-8 p-8 rounded-tl-xl rounded-tr-xl max-w-2xl lg:mt-10">
+                <h3 class="text-xl sm:text-2xl text-blue-600 my-5">About Us</h3>
+                <h1 class="text-3xl sm:text-4xl font-bold my-3">The Best Marketing Agency to Improve Your Business</h1>
+                <p class="font-light text-gray-600 my-5">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit.
+                    Aliqu diam amet
+                    diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo
+                </p>
+                <div class="abut-1 flex flex-col sm:flex-row ">
+                    <div class="item-1">
+                        <img src="img/icon/icon-5.png" alt="">
+                        <h1 class="text-xl font-medium my-3">Managed Services</h1>
+                        <p class="font-light text-gray-600 my-3">Clita erat ipsum et lorem et sit sed stet lorem</p>
+                    </div>
+                    <div class="item-2">
+                        <img src="img/icon/icon-2.png" alt="">
+                        <h1 class="text-xl font-medium my-3">Dedicated Experts</h1>
+                        <p class="font-light text-gray-600 my-3">Clita erat ipsum et lorem et sit sed stet lorem</p>
+                    </div>
+                </div>
+                <button class="bg-blue-600 px-6 py-3 my-10 rounded-3xl text-lg text-white">Explore More</button>
+            </div>
+
+
+        </div>
+    </section>
+
+
+
+    <!-- services section -->
+    <section id="services">
+        <div class="ser-head text-center w-4/5 mx-auto my-10 md:w-1/2 2xl:w-[30%]">
+            <h2 class="text-xl sm:text-2xl text-blue-600">Our Services</h2>
+            <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold">Digital Marketing Services That We Offer</h1>
+        </div>
+        <div
+            class="service-container  flex flex-wrap my-20 mx-8 sm:mx-0 justify-center gap-8 text-center 2xl:w-3/4 2xl:mx-auto">
+            <div class="ser-item relative ">
+                <div
+                    class="p-12  bg-white md:w-[360px] md:h-[350px]   flex flex-col justify-center items-center rounded-md shadow-[0px_0px_40px_0px_rgba(0,0,0,0.1)]">
+                    <img class="my-3" src="img/icon/icon-5.png" alt="">
+                    <h1 class="text-xl font-medium my-3">Digital Marketing</h1>
+                    <p class="font-light my-3">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam
+                    </p>
+                </div>
+                <div
+                    class="text-blue-600 hidden read-more relative bottom-[0%] p-1 z-[-100] rounded-b-md backdrop-blur-2xl w-full bg-zinc-100 m-auto">
+                    <a href="">Reade More<i class="fa-solid fa-angles-right"></i></a>
+                </div>
+            </div>
+
+            <div class="ser-item relative ">
+                <div
+                    class="p-12  bg-white md:w-[360px] md:h-[350px]   flex flex-col justify-center items-center rounded-md shadow-[0px_0px_40px_0px_rgba(0,0,0,0.1)]">
+                    <img class="my-3" src="img/icon/icon-5.png" alt="">
+                    <h1 class="text-xl font-medium my-3">Internet Marketing</h1>
+                    <p class="font-light my-3">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam
+                    </p>
+                </div>
+                <div
+                    class="text-blue-600 hidden read-more relative bottom-[0%] p-1 z-[-100] rounded-b-md backdrop-blur-2xl w-full bg-zinc-100 m-auto">
+                    <a href="">Reade More<i class="fa-solid fa-angles-right"></i></a>
+                </div>
+            </div>
+
+            <div class="ser-item relative ">
+                <div
+                    class="p-12  bg-white md:w-[360px] md:h-[350px]   flex flex-col justify-center items-center rounded-md shadow-[0px_0px_40px_0px_rgba(0,0,0,0.1)]">
+                    <img class="my-3" src="img/icon/icon-5.png" alt="">
+                    <h1 class="text-xl font-medium my-3">Content Marketing</h1>
+                    <p class="font-light my-3">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam
+                    </p>
+                </div>
+                <div
+                    class="text-blue-600 hidden read-more relative bottom-[0%] p-1 z-[-100] rounded-b-md backdrop-blur-2xl w-full bg-zinc-100 m-auto">
+                    <a href="">Reade More<i class="fa-solid fa-angles-right"></i></a>
+                </div>
+            </div>
+
+            <div class="ser-item relative ">
+                <div
+                    class="p-12  bg-white md:w-[360px] md:h-[350px]   flex flex-col justify-center items-center rounded-md shadow-[0px_0px_40px_0px_rgba(0,0,0,0.1)]">
+                    <img class="my-3" src="img/icon/icon-5.png" alt="">
+                    <h1 class="text-xl font-medium my-3">Social Marketing</h1>
+                    <p class="font-light my-3">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam
+                    </p>
+                </div>
+                <div
+                    class="text-blue-600 hidden read-more relative bottom-[0%] p-1 z-[-100] rounded-b-md backdrop-blur-2xl w-full bg-zinc-100 m-auto">
+                    <a href="">Reade More<i class="fa-solid fa-angles-right"></i></a>
+                </div>
+            </div>
+
+            <div class="ser-item relative ">
+                <div
+                    class="p-12  bg-white md:w-[360px] md:h-[350px]   flex flex-col justify-center items-center rounded-md shadow-[0px_0px_40px_0px_rgba(0,0,0,0.1)]">
+                    <img class="my-3" src="img/icon/icon-5.png" alt="">
+                    <h1 class="text-xl font-medium my-3">B2B Marketing</h1>
+                    <p class="font-light my-3">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam
+                    </p>
+                </div>
+                <div
+                    class="text-blue-600 hidden read-more relative bottom-[0%] p-1 z-[-100] rounded-b-md backdrop-blur-2xl w-full bg-zinc-100 m-auto">
+                    <a href="">Reade More<i class="fa-solid fa-angles-right"></i></a>
+                </div>
+            </div>
+
+            <div class="ser-item relative ">
+                <div
+                    class="p-12  bg-white md:w-[360px] md:h-[350px]   flex flex-col justify-center items-center rounded-md shadow-[0px_0px_40px_0px_rgba(0,0,0,0.1)]">
+                    <img class="my-3" src="img/icon/icon-5.png" alt="">
+                    <h1 class="text-xl font-medium my-3">E-mail Marketing</h1>
+                    <p class="font-light my-3">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam
+                    </p>
+                </div>
+                <div
+                    class="text-blue-600 hidden read-more relative bottom-[0%] p-1 z-[-100] rounded-b-md backdrop-blur-2xl w-full bg-zinc-100 m-auto">
+                    <a href="">Reade More<i class="fa-solid fa-angles-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- project section -->
+
+    <section id="project" class="container max-w-7xl mx-auto relative overflow-hidden ">
+        <div class="project-head text-center md:text-start md:mx-8 w-4/5 mx-auto my-10 md:w-1/2 ">
+            <h2 class="text-xl sm:text-2xl text-blue-600">Our Projects</h2>
+            <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold">We've Done Lot's of Awesome Projects</h1>
+        </div>
+
+        <div class="project-main wrapper container w-[90%] lg:w-full m-auto max-w-[28rem] md:max-w-full  lg:max-w-7xl">
+            <div class="btn flex justify-center md:justify-end gap-5 m-5">
+                <i id="left"
+                    class="fa-solid fa-angle-left shadow-lg  cursor-pointer h-12 w-12 bg-white flex justify-center items-center rounded-full text-xl btn-car"></i>
+                <i id="right"
+                    class="fa-solid fa-angle-right shadow-lg cursor-pointer h-12 w-12 bg-white flex justify-center items-center rounded-full text-xl btn-car"></i>
+            </div>
+            <ul
+                class="carousel overflow-x-auto scroll-smooth  grid grid-flow-col auto-cols-[100%] md:auto-cols-[calc((100%/2)-8px)] lg:auto-cols-[calc((100%/3)-12px)] gap-4">
+                <li class="card relative shadow-sm cursor-grab flex flex-col list-none bg-white rounded-xl max-w-md"
+                    style="scroll-snap-align: start;">
+                    <div class="img "><img class="w-fit rounded-tr-xl rounded-tl-xl" src="img/project-1.jpg" alt="img"
+                            draggable="false"></div>
+                    <div class="img-text mx-8 my-4">
+                        <h2 class="text-xl font-medium">Data Analystic & Insights</h2>
+                        <span class="text-gray-600">Erat ipsum justo amet duo et elitr dolor, est duo duo eos
+                            lorem</span>
+                    </div>
+                    <div class="justify-center card-ele hidden gap-2 absolute bottom-[55%] left-[38%]">
+                        <i
+                            class="fa-solid fa-eye shadow-lg cursor-pointer h-12 w-12 bg-white flex justify-center items-center rounded-full text-xl"></i>
+                        <i
+                            class="fa-solid fa-link shadow-lg cursor-pointer h-12 w-12 bg-white flex justify-center items-center rounded-full text-xl"></i>
+                    </div>
+                </li>
+                <li class="card relative shadow-sm cursor-grab flex flex-col list-none bg-white rounded-xl max-w-md"
+                    style="scroll-snap-align: start;">
+                    <div class="img "><img class="w-fit rounded-tr-xl rounded-tl-xl" src="img/project-2.jpg" alt="img"
+                            draggable="false"></div>
+                    <div class="img-text mx-8 my-4">
+                        <h2 class="text-xl font-medium">Marketing Content Strategy</h2>
+                        <span class="text-gray-600">Erat ipsum justo amet duo et elitr dolor, est duo duo eos
+                            lorem</span>
+                    </div>
+                    <div class="justify-center card-ele hidden gap-2 absolute bottom-[55%] left-[38%]">
+                        <i
+                            class="fa-solid fa-eye shadow-lg cursor-pointer h-12 w-12 bg-white flex justify-center items-center rounded-full text-xl"></i>
+                        <i
+                            class="fa-solid fa-link shadow-lg cursor-pointer h-12 w-12 bg-white flex justify-center items-center rounded-full text-xl"></i>
+                    </div>
+
+                </li>
+                <li class="card relative shadow-sm cursor-grab flex flex-col list-none bg-white rounded-xl max-w-md"
+                    style="scroll-snap-align: start;">
+                    <div class="img "><img class="w-fit rounded-tr-xl rounded-tl-xl" src="img/project-3.jpg" alt="img"
+                            draggable="false"></div>
+                    <div class="img-text mx-8 my-4">
+                        <h2 class="text-xl font-medium">Business Target Market</h2>
+                        <span class="text-gray-600">Erat ipsum justo amet duo et elitr dolor, est duo duo eos
+                            lorem</span>
+                    </div>
+                    <div class="justify-center card-ele hidden gap-2 absolute bottom-[55%] left-[38%]">
+                        <i
+                            class="fa-solid fa-eye shadow-lg cursor-pointer h-12 w-12 bg-white flex justify-center items-center rounded-full text-xl"></i>
+                        <i
+                            class="fa-solid fa-link shadow-lg cursor-pointer h-12 w-12 bg-white flex justify-center items-center rounded-full text-xl"></i>
+                    </div>
+
+                </li>
+                <li class="card relative shadow-sm cursor-grab flex flex-col list-none bg-white rounded-xl max-w-md"
+                    style="scroll-snap-align: start;">
+                    <div class="img "><img class="w-fit rounded-tr-xl rounded-tl-xl" src="img/project-4.jpg" alt="img"
+                            draggable="false"></div>
+                    <div class="img-text mx-8 my-4">
+                        <h2 class="text-xl font-medium">Social Marketing Strategy</h2>
+                        <span class="text-gray-600">Erat ipsum justo amet duo et elitr dolor, est duo duo eos
+                            lorem</span>
+                    </div>
+                    <div class="justify-center card-ele hidden gap-2 absolute bottom-[55%] left-[38%]">
+                        <i
+                            class="fa-solid fa-eye shadow-lg cursor-pointer h-12 w-12 bg-white flex justify-center items-center rounded-full text-xl"></i>
+                        <i
+                            class="fa-solid fa-link shadow-lg cursor-pointer h-12 w-12 bg-white flex justify-center items-center rounded-full text-xl"></i>
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+
+    </section>
+
+
+    <!-- quote section  -->
+
+    <section id="quote" class="container mx-auto ">
+        <div class="quote-container mx-8 my-20 font-light flex flex-col lg:flex-row lg:gap-10 leading-8">
+            <div class="q-item-1">
+                <div class="quote-head text-center md:text-start md:mx-0 w-4/5 mx-auto">
+                    <h2 class="text-xl sm:text-2xl text-blue-600">Get Quote</h2>
+                    <h1 class="text-3xl sm:text-4xl xl:text-5xl font-bold">Need Our Expert Help? We're Here!</h1>
+                </div>
+                <p class="my-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et
+                    eos. Clita
+                    erat ipsum et lorem et sit, sed stet lorem sit clita duo justo
+                </p>
+                <p class="my-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et
+                    eos. Clita
+                    erat ipsum et lorem et sit, sed stet lorem sit clita duo justo
+                </p>
+                <button class="border border-blue-600 rounded-md"><i
+                        class="fa-solid fa-phone text-white bg-blue-600 text-xl px-4 py-3"></i>
+                    <span class="p-2 text-xl font-medium text-blue-600">+012 345 6789</span></button>
+            </div>
+
+            <div class="q-item-2 2xl:w-3/4">
+                <h1 class="text-2xl md:text-3xl my-5 font-medium">Get A Free Quote</h1>
+                <form action="">
+                    <div class="item-1 sm:flex gap-5">
+                        <input class="w-full border border-gray-300 bg-transparent rounded-lg p-3 my-2" type="text"
+                            name="name" id="" placeholder="Your Name" required>
+                        <input class="w-full border border-gray-300 bg-transparent rounded-lg p-3 my-2" type="email"
+                            name="email" id="" placeholder="Your Email" required>
+                    </div>
+                    <div class="item-2 sm:flex gap-5">
+                        <input class="w-full border border-gray-300 bg-transparent rounded-lg p-3 my-2" type="number"
+                            name="number" id="" placeholder="Your Number" required>
+                        <select name="choose" id=""
+                            class="w-full border border-gray-300 bg-transparent rounded-lg p-3 my-2">
+                            <option value="1">Digital Marketing</option>
+                            <option value="2">Social Marketing</option>
+                            <option value="3">Content Marketing </option>
+                            <option value="4">E-mail Marketing</option>
+                        </select>
+                    </div>
+                    <textarea name="message"
+                        class="w-full border border-gray-300 bg-transparent rounded-lg p-3 my-2 h-32" id=""
+                        placeholder="Message"></textarea>
+                    <button type="submit" class="text-white bg-blue-600 px-10 py-4 text-lg  w-full rounded-lg">Submit
+                        Now</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- team section -->
+
+    <section id="team" class="container mx-auto">
+        <div class="team-head text-center w-4/5 mx-auto my-10 md:w-1/2 2xl:w-[30%]">
+            <h2 class="text-xl sm:text-2xl text-blue-600">Our Team</h2>
+            <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold">Our Expert People Ready To Help You</h1>
+        </div>
+        <div class="team-container m-5  text-center gap-8 flex flex-wrap lg:flex-nowrap justify-center items-center">
+            <div class="team-item bg-white pb-4 rounded-lg shadow-lg relative">
+                <img class="md:max-h-96" src="img/team-1.jpg" alt="">
+                <h1 class="text-xl font-medium my-2">Alex Robin</h1>
+                <h2 class="text-lg text-blue-600 font-light my-2">Founder & CEO</h2>
+
+                <ul class="flex flex-col gap-2 absolute top-4 left-4 team-icons">
+                    <li
+                        class="h-9 w-9  bg-white rounded-full text-blue-600  justify-center items-center team-icon hidden">
+                        <i class="fa-brands fa-twitter "></i>
+                    </li>
+                    <li
+                        class="h-9 w-9  bg-white rounded-full text-blue-600  justify-center items-center team-icon hidden">
+                        <i class="fa-brands fa-facebook-f "></i>
+                    </li>
+                    <li
+                        class="h-9 w-9  bg-white rounded-full text-blue-600  justify-center items-center team-icon hidden">
+                        <i class="fa-brands fa-youtube"></i>
+                    </li>
+                    <li
+                        class="h-9 w-9  bg-white rounded-full text-blue-600  justify-center items-center team-icon hidden">
+                        <i class="fa-brands fa-linkedin-in "></i>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="team-item bg-white pb-4 rounded-lg shadow-lg relative">
+                <img class="md:max-h-96" src="img/team-2.jpg" alt="">
+                <h1 class="text-xl font-medium my-2">Adam Crew</h1>
+                <h2 class="text-lg text-blue-600 font-light my-2">Co Founder</h2>
+
+
+                <ul class="flex flex-col gap-2 absolute top-4 left-4 team-icons">
+                    <li
+                        class="h-9 w-9  bg-white rounded-full text-blue-600  justify-center items-center team-icon hidden">
+                        <i class="fa-brands fa-twitter "></i>
+                    </li>
+                    <li
+                        class="h-9 w-9  bg-white rounded-full text-blue-600  justify-center items-center team-icon hidden">
+                        <i class="fa-brands fa-facebook-f "></i>
+                    </li>
+                    <li
+                        class="h-9 w-9  bg-white rounded-full text-blue-600  justify-center items-center team-icon hidden">
+                        <i class="fa-brands fa-youtube"></i>
+                    </li>
+                    <li
+                        class="h-9 w-9  bg-white rounded-full text-blue-600  justify-center items-center team-icon hidden">
+                        <i class="fa-brands fa-linkedin-in "></i>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="team-item bg-white pb-4 rounded-lg shadow-lg relative">
+                <img class="md:max-h-96" src="img/team-3.jpg" alt="">
+                <h1 class="text-xl font-medium my-2">Boris Jhonson</h1>
+                <h2 class="text-lg text-blue-600 font-light my-2">Executive Manager</h2>
+
+
+                <ul class="flex flex-col gap-2 absolute top-4 left-4 team-icons">
+                    <li
+                        class="h-9 w-9  bg-white rounded-full text-blue-600  justify-center items-center team-icon hidden">
+                        <i class="fa-brands fa-twitter "></i>
+                    </li>
+                    <li
+                        class="h-9 w-9  bg-white rounded-full text-blue-600  justify-center items-center team-icon hidden">
+                        <i class="fa-brands fa-facebook-f "></i>
+                    </li>
+                    <li
+                        class="h-9 w-9  bg-white rounded-full text-blue-600  justify-center items-center team-icon hidden">
+                        <i class="fa-brands fa-youtube"></i>
+                    </li>
+                    <li
+                        class="h-9 w-9  bg-white rounded-full text-blue-600  justify-center items-center team-icon hidden">
+                        <i class="fa-brands fa-linkedin-in "></i>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="team-item bg-white pb-4 rounded-lg shadow-lg relative">
+                <img class="md:max-h-96" src="img/team-4.jpg" alt="">
+                <h1 class="text-xl font-medium my-2">Robert Jordan</h1>
+                <h2 class="text-lg text-blue-600 font-light my-2">Digital Marketer</h2>
+
+
+                <ul class="flex flex-col gap-2 absolute top-4 left-4 team-icons">
+                    <li
+                        class="h-9 w-9  bg-white rounded-full text-blue-600  justify-center items-center team-icon hidden">
+                        <i class="fa-brands fa-twitter "></i>
+                    </li>
+                    <li
+                        class="h-9 w-9  bg-white rounded-full text-blue-600  justify-center items-center team-icon hidden">
+                        <i class="fa-brands fa-facebook-f "></i>
+                    </li>
+                    <li
+                        class="h-9 w-9  bg-white rounded-full text-blue-600  justify-center items-center team-icon hidden">
+                        <i class="fa-brands fa-youtube"></i>
+                    </li>
+                    <li
+                        class="h-9 w-9  bg-white rounded-full text-blue-600  justify-center items-center team-icon hidden">
+                        <i class="fa-brands fa-linkedin-in "></i>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- testimonial section-->
+
+    <section id="testimonial" class="container max-w-7xl mx-auto overflow-hidden my-10">
+        <div class="testi-head text-center md:text-start md:mx-8 w-4/5 mx-auto my-10 md:w-1/2 ">
+            <h2 class="text-xl sm:text-2xl text-blue-600">Testimonial</h2>
+            <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold">what Clients Say About Our Services</h1>
+        </div>
+        <!-- partial:index.partial.html -->
+        <div class="news-slider__ctr testi-main">
+
+            <div class="news-slider__arrows btn flex justify-center md:justify-end gap-5 m-5">
+                <button class="news-slider__arrow news-slider-prev bg-white shadow-xl rounded-full ">
+                    <i id="left"
+                        class="fa-solid fa-angle-left shadow-lg  cursor-pointer h-12 w-12 bg-white flex justify-center items-center rounded-full text-xl btn-car"></i>
+                </button>
+                <button class="news-slider__arrow news-slider-next">
+                    <i id="right"
+                        class="fa-solid fa-angle-right shadow-lg cursor-pointer h-12 w-12 bg-white flex justify-center items-center rounded-full text-xl btn-car"></i>
+                </button>
+            </div>
+
+
+
+        </div>
+        <div class="wrapper mx-auto relative mb-10 ml-[-30%] sm:ml-[-10%] testi-main">
+
+            <div class="news-slider">
+                <div class="news-slider__wrp swiper-wrapper flex gap-3">
+                    <div class="news-slider__item swiper-slide">
+                        <a href="#" class="news__item flex flex-col gap-5  text-black bg-white shadow-lg ">
+                            <div class="rounded-full">
+                                <img class="rounded-full" src="img/testimonial-1.jpg" alt="news">
+                            </div>
+                            <p class="p">
+                                Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et
+                                sit, sed stet lorem sit clita duo justo
+                            </p>
+                            <h1 class="font-bold text-xl">
+                                Client Name
+                            </h1>
+                            <p class="p">
+                                profession
+                            </p>
+
+                        </a>
+                    </div>
+                    <div class="news-slider__item swiper-slide ">
+                        <a href="#" class="news__item flex flex-col gap-5  text-black bg-white shadow-lg">
+                            <div class="rounded-full">
+                                <img class="rounded-full" src="img/testimonial-2.jpg" alt="news">
+                            </div>
+                            <p class="p">
+                                Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et
+                                sit, sed stet lorem sit clita duo justo
+                            </p>
+                            <h1 class="font-bold text-xl">
+                                Client Name
+                            </h1>
+                            <p class="p">
+                                profession
+                            </p>
+
+                        </a>
+                    </div>
+
+                    <div class="news-slider__item swiper-slide ">
+                        <a href="#" class="news__item flex flex-col gap-5  text-black bg-white shadow-lg">
+                            <div class="rounded-full">
+                                <img class="rounded-full" src="img/testimonial-3.jpg" alt="news">
+                            </div>
+                            <p class="p">
+                                Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et
+                                sit, sed stet lorem sit clita duo justo
+                            </p>
+                            <h1 class="font-bold text-xl">
+                                Client Name
+                            </h1>
+                            <p class="p">
+                                profession
+                            </p>
+
+                        </a>
+                    </div>
+
+                    <div class="news-slider__item swiper-slide ">
+                        <a href="#" class="news__item flex flex-col gap-5  text-black bg-white shadow-lg">
+                            <div class="rounded-full">
+                                <img class="rounded-full" src="img/testimonial-4.jpg" alt="news">
+                            </div>
+                            <p class="p">
+                                Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et
+                                sit, sed stet lorem sit clita duo justo
+                            </p>
+                            <h1 class="font-bold text-xl">
+                                Client Name
+                            </h1>
+                            <p class="p">
+                                profession
+                            </p>
+
+                        </a>
+                    </div>
+
+
+                </div>
+
+
+
+            </div>
+
+        </div>
+
+        <svg hidden="hidden">
+            <defs>
+                <symbol id="icon-arrow-left" viewBox="0 0 32 32">
+                    <title>arrow-left</title>
+                    <path
+                        d="M0.704 17.696l9.856 9.856c0.896 0.896 2.432 0.896 3.328 0s0.896-2.432 0-3.328l-5.792-5.856h21.568c1.312 0 2.368-1.056 2.368-2.368s-1.056-2.368-2.368-2.368h-21.568l5.824-5.824c0.896-0.896 0.896-2.432 0-3.328-0.48-0.48-1.088-0.704-1.696-0.704s-1.216 0.224-1.696 0.704l-9.824 9.824c-0.448 0.448-0.704 1.056-0.704 1.696s0.224 1.248 0.704 1.696z">
+                    </path>
+                </symbol>
+                <symbol id="icon-arrow-right" viewBox="0 0 32 32">
+                    <title>arrow-right</title>
+                    <path
+                        d="M31.296 14.336l-9.888-9.888c-0.896-0.896-2.432-0.896-3.328 0s-0.896 2.432 0 3.328l5.824 5.856h-21.536c-1.312 0-2.368 1.056-2.368 2.368s1.056 2.368 2.368 2.368h21.568l-5.856 5.824c-0.896 0.896-0.896 2.432 0 3.328 0.48 0.48 1.088 0.704 1.696 0.704s1.216-0.224 1.696-0.704l9.824-9.824c0.448-0.448 0.704-1.056 0.704-1.696s-0.224-1.248-0.704-1.664z">
+                    </path>
+                </symbol>
+            </defs>
+        </svg>
+
+
+    </section>
+
+    <!-- footer section  -->
+    <footer class="footer bg-[#1C2035] text-[#B0B9AE] p-8 text-lg leading-8">
+        <div class="footer flex flex-col md:flex-row flex-wrap xl:flex-nowrap justify-around">
+            <div class="footer-item my-10 md:w-5/12">
+                <h1 class="text-white font-medium text-xl my-5">Our Office</h1>
+                <ul>
+                    <li class="space-x-2">
+                        <i class="fa-solid fa-location-dot"></i> <span> 123 Street, New York, USA</span>
+                    </li>
+                    <li class="space-x-2">
+                        <i class="fa-solid fa-phone"></i> <span> +012 345 67890</span>
+                    </li>
+                    <li class="space-x-2">
+                        <i class="fa-solid fa-envelope"></i> <span> info@example.com</span>
+                    </li>
+                </ul>
+                <div class="footer-icon my-10">
+                    <ul class="flex gap-2">
+                        <li class="h-9 w-9 fa-sm bg-white rounded-full text-black flex justify-center items-center">
+                            <i class="fa-brands fa-twitter "></i>
+                        </li>
+                        <li class="h-9 w-9 fa-sm bg-white rounded-full text-black flex justify-center items-center">
+                            <i class="fa-brands fa-facebook-f fa-sm "></i>
+                        </li>
+                        <li class="h-9 w-9 fa-sm bg-white rounded-full text-black flex justify-center items-center">
+                            <i class="fa-brands fa-youtube fa-sm "></i>
+                        </li>
+                        <li class="h-9 w-9 fa-sm bg-white rounded-full text-black flex justify-center items-center">
+                            <i class="fa-brands fa-linkedin-in fa-sm "></i>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+
+            <div class="footer-links my-10 md:w-5/12">
+                <h1 class="text-white font-medium text-xl my-5">
+                    Quick Links
+                </h1>
+                <ul>
+                    <li>
+                        <i class="fa-solid fa-chevron-right "></i><span class="cursor-pointer"> About Us</span>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-chevron-right"></i><span class="cursor-pointer"> Contact Us</span>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-chevron-right"></i><span class="cursor-pointer"> Our Services</span>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-chevron-right"></i><span class="cursor-pointer"> Tearms & Condition</span>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-chevron-right"></i><span class="cursor-pointer"> Support</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer-item my-10 md:w-5/12">
+                <h1 class="text-white font-medium text-xl my-5">Business Hours</h1>
+                <h3>Monday-Friday</h3>
+                <h2 class="text-white">09:00 am-07:00pm</h2>
+                <h3>Saturday</h3>
+                <h2 class="text-white">09:00am-12:00pm</h2>
+                <h3>Sunday</h3>
+                <h2 class="text-white">Colsed</h2>
+            </div>
+
+
+            <div class="footer-item my-10 md:w-5/12">
+                <h1 class="text-white font-medium text-xl my-5">Newsletter</h1>
+                <p class="max-w-[20rem]">Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
+                <div class="border border-white py-2 rounded-xl flex m-3 justify-between items-center max-w-[20rem]">
+                    <input type="email" name="" class="bg-transparent pl-2 w-9/12 outline-none" id=""
+                        placeholder="Your Email">
+                    <button class="bg-white text-black px-2 py-1 rounded-lg mr-2">SignUp</button>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <section
+        class="footer end bg-[#111111] text-[#B0B9AE] p-5 text-lg text-center leading-8 flex flex-col md:flex-row justify-around">
+        <h1>© <span class="text-white">Your Site Name</span> , All Rights Reserved.</h1>
+        <h1>Designed By <span class="text-white">HTML Codex</span> Distributed By <span
+                class="text-white">ThemeWagon</span></h1>
+    </section>
+
+
+
+    <!-- partial -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/js/swiper.min.js'></script>
+    <script src="./script.js"></script>
+    <script>
+        // slider js
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides((slideIndex += n));
+        }
+
+        function currentSlide(n) {
+            showSlides((slideIndex = n));
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {
+                slideIndex = 1;
+            }
+            if (n < 1) {
+                slideIndex = slides.length;
+            }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "flex";
+            dots[slideIndex - 1].className += " active";
+        }
+
+
+
+        //carousel cards
+        const wrapper = document.querySelector(".wrapper");
+        const carousel1 = document.querySelector(".carousel");
+        const firstCardWidth = carousel1.querySelector(".card").offsetWidth;
+        const arrowBtns = document.querySelectorAll(".wrapper i");
+        const carouselChildrens = [...carousel1.children];
+
+        let isDragging = false,
+            isAutoPlay = true,
+            startX,
+            startScrollLeft,
+            timeoutId;
+
+        // Get the number of cards that can fit in the carousel at once
+        let cardPerView = Math.round(carousel1.offsetWidth / firstCardWidth);
+
+        // Insert copies of the last few cards to beginning of carousel for infinite scrolling
+        carouselChildrens
+            .slice(-cardPerView)
+            .reverse()
+            .forEach((card) => {
+                carousel1.insertAdjacentHTML("afterbegin", card.outerHTML);
+            });
+
+        // Insert copies of the first few cards to end of carousel for infinite scrolling
+        carouselChildrens.slice(0, cardPerView).forEach((card) => {
+            carousel1.insertAdjacentHTML("beforeend", card.outerHTML);
+        });
+
+        // Scroll the carousel at appropriate postition to hide first few duplicate cards on Firefox
+        carousel1.classList.add("no-transition");
+        carousel1.scrollLeft = carousel1.offsetWidth;
+        carousel1.classList.remove("no-transition");
+
+        // Add event listeners for the arrow buttons to scroll the carousel left and right
+        arrowBtns.forEach((btn) => {
+            btn.addEventListener("click", () => {
+                carousel1.scrollLeft += btn.id == "left" ? -firstCardWidth : firstCardWidth;
+            });
+        });
+
+        const dragStart = (e) => {
+            isDragging = true;
+            carousel1.classList.add("dragging");
+            // Records the initial cursor and scroll position of the carousel
+            startX = e.pageX;
+            startScrollLeft = carousel1.scrollLeft;
+        };
+
+        const dragging = (e) => {
+            if (!isDragging) return; // if isDragging is false return from here
+            // Updates the scroll position of the carousel based on the cursor movement
+            carousel1.scrollLeft = startScrollLeft - (e.pageX - startX);
+        };
+
+        const dragStop = () => {
+            isDragging = false;
+            carousel1.classList.remove("dragging");
+        };
+
+        const infiniteScroll = () => {
+            // If the carousel is at the beginning, scroll to the end
+            if (carousel1.scrollLeft === 0) {
+                carousel1.classList.add("no-transition");
+                carousel1.scrollLeft = carousel1.scrollWidth - 2 * carousel1.offsetWidth;
+                carousel1.classList.remove("no-transition");
+            }
+            // If the carousel is at the end, scroll to the beginning
+            else if (
+                Math.ceil(carousel1.scrollLeft) ===
+                carousel1.scrollWidth - carousel1.offsetWidth
+            ) {
+                carousel1.classList.add("no-transition");
+                carousel1.scrollLeft = carousel1.offsetWidth;
+                carousel1.classList.remove("no-transition");
+            }
+
+            // Clear existing timeout & start autoplay if mouse is not hovering over carousel
+            clearTimeout(timeoutId);
+            if (!wrapper.matches(":hover")) autoPlay();
+        };
+
+        const autoPlay = () => {
+            if (window.innerWidth < 800 || !isAutoPlay) return; // Return if window is smaller than 800 or isAutoPlay is false
+            // Autoplay the carousel after every 2500 ms
+            timeoutId = setTimeout(() => (carousel1.scrollLeft += firstCardWidth), 2500);
+        };
+        autoPlay();
+
+        carousel1.addEventListener("mousedown", dragStart);
+        carousel1.addEventListener("mousemove", dragging);
+        document.addEventListener("mouseup", dragStop);
+        carousel1.addEventListener("scroll", infiniteScroll);
+        wrapper.addEventListener("mouseenter", () => clearTimeout(timeoutId));
+        wrapper.addEventListener("mouseleave", autoPlay);
+
+
+        //dropdown menu
+        function dropshow() {
+            document.getElementById("drop-item").style.display = "flex";
+            document.getElementById("drop-item").style.animationName = "from-bottom";
+            document.getElementById("drop-item").style.animationDuration = "0.8s";
+        }
+        function drophide() {
+            document.getElementById("drop-item").style.animationName = "from-top";
+            document.getElementById("drop-item").style.animationDuration = "0.8s";
+            document.getElementById("drop-item").style.display = "none";
+            // setTimeout(()=>{document.getElementById("drop-item").style.display="none";},1000);
+            // setTimeout(document.getElementById("drop-item").style.display="none", 1000);
+
+        }
+
+        function dropclick() {
+            var x = document.getElementById("drop-item");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+
+        //navbar toogle
+        function navToggle() {
+            var x = document.getElementById("nav-toggle");
+            if (x.style.display === "none") {
+                x.style.display = "flex";
+                x.style.animationName = "nav-toggle-1";
+            } else {
+                x.style.animationName = "nav-toggle-2";
+                x.style.display = "none";
+            }
+        }
+
+
+
+        // grids animation
+        const observerGrid = new IntersectionObserver((entriesGrid) => {
+            entriesGrid.forEach((entry) => {
+                console.log(entry)
+                if (entry.isIntersecting) {
+                    entry.target.style.transform = "translate3d(0, 0, 0)";
+                    entry.target.style.opacity = 1;
+                }
+                // else{
+                //   entry.target.style.transform="translate3d(-50px, 0, 0)";
+                //   entry.target.style.opacity = 0;
+                // }
+            })
+        })
+
+        const grids = document.querySelectorAll(".grid-item");
+        grids.forEach((el) => observerGrid.observe(el));
+
+        //services animation
+        const observerSer = new IntersectionObserver((entriesSer) => {
+            entriesSer.forEach((entry) => {
+                console.log(entry)
+                if (entry.isIntersecting) {
+                    entry.target.style.transform = "translate3d(0, 0, 0)";
+                    entry.target.style.opacity = 1;
+                }
+                // else{
+                //   entry.target.style.transform="translate3d(0, 100px, 0)";
+                //   entry.target.style.opacity = 0;
+                // }
+            })
+        })
+        //services
+        const services = document.querySelectorAll(".ser-item");
+        services.forEach((el) => observerSer.observe(el));
+
+        const serHead = document.querySelectorAll(".ser-head");
+        serHead.forEach((el) => observerSer.observe(el));
+
+        //project
+        const projectHead = document.querySelectorAll(".project-head");
+        projectHead.forEach((el) => observerSer.observe(el));
+
+        const projectMain = document.querySelectorAll(".project-main");
+        projectMain.forEach((el) => observerSer.observe(el));
+
+        //about 
+        const aboutText = document.querySelectorAll(".about-text");
+        aboutText.forEach((el) => observerSer.observe(el));
+
+        //quote
+        const item1 = document.querySelectorAll(".q-item-1");
+        item1.forEach((el) => observerSer.observe(el));
+
+        const item2 = document.querySelectorAll(".q-item-2");
+        item2.forEach((el) => observerSer.observe(el));
+
+        //team
+        const teamHead = document.querySelectorAll(".team-head");
+        teamHead.forEach((el) => observerSer.observe(el));
+
+        const teamItem = document.querySelectorAll(".team-item");
+        teamItem.forEach((el) => observerSer.observe(el));
+
+        //testimonial
+        const testiHead = document.querySelectorAll(".testi-head");
+        testiHead.forEach((el) => observerSer.observe(el));
+
+        const testiMain = document.querySelectorAll(".testi-main");
+        testiMain.forEach((el) => observerSer.observe(el));
+
+        // footer
+        const footer = document.querySelectorAll(".footer");
+        footer.forEach((el) => observerSer.observe(el));
+
+
+
+
+
+        //navbar positioning
+        // windows on scroll runs functions
+        window.onscroll = function () {
+            scrollFunction();
+        };
+
+        // for navbar color and size
+        function scrollFunction() {
+            if (
+                document.body.scrollTop > 300 ||
+                document.documentElement.scrollTop > 300
+            ) {
+                console.log(document.body.scrollTop);
+                console.log(document.documentElement.scrollTop);
+                document.getElementById("header").style.position = "fixed";
+                document.getElementById("header").style.top = "0px";
+                document.getElementById("header").style.animationName = "nav-animation";
+            } else {
+                document.getElementById("header").style.position = "initial";
+                document.getElementById("header").style.animationName = "fade-1";
+            }
+        }
+
+
+        function modelDisplay() {
+            model = document.getElementById("model");
+            console.log(model)
+            if (model.style.display === "none") {
+                model.style.display = "flex";
+            } else {
+                model.style.display = "none";
+            }
+        }
+    </script>
+    <script>
+        var bg = document.querySelector('.item-bg');
+        var items = document.querySelectorAll('.news__item');
+        var item = document.querySelector('.news__item');
+
+        function cLog(content) {
+            console.log(content)
+        }
+
+        if ($(window).width() > 800) {
+            $(document).on("mouseover", ".news__item", function (_event, _element) {
+
+                var newsItem = document.querySelectorAll('.news__item');
+                newsItem.forEach(function (element, index) {
+                    element.addEventListener('mouseover', function () {
+                        var x = this.getBoundingClientRect().left;
+                        var y = this.getBoundingClientRect().top;
+                        var width = this.getBoundingClientRect().width;
+                        var height = this.getBoundingClientRect().height;
+
+                        $('.item-bg').addClass('active');
+                        $('.news__item').removeClass('active');
+                        // $('.news__item').removeClass('active');
+
+                    });
+
+                    element.addEventListener('mouseleave', function () {
+                        $('.item-bg').removeClass('active');
+                        $('.news__item').removeClass('active');
+                    });
+
+                });
+
+            });
+        }
+
+
+        var swiper = new Swiper('.news-slider', {
+            effect: 'coverflow',
+            grabCursor: true,
+            loop: true,
+            centeredSlides: true,
+            keyboard: true,
+            spaceBetween: 0,
+            slidesPerView: 'auto',
+            speed: 300,
+            coverflowEffect: {
+                rotate: 0,
+                stretch: 0,
+                depth: 0,
+                modifier: 3,
+                slideShadows: false
+            },
+            breakpoints: {
+                480: {
+                    spaceBetween: 0,
+                    centeredSlides: true
+                }
+            },
+            simulateTouch: true,
+            navigation: {
+                nextEl: '.news-slider-next',
+                prevEl: '.news-slider-prev'
+            },
+            pagination: {
+                el: '.news-slider__pagination',
+                clickable: true
+            },
+            on: {
+                init: function () {
+                    var activeItem = document.querySelector('.swiper-slide-active');
+
+                    var sliderItem = activeItem.querySelector('.news__item');
+
+                    $('.swiper-slide-active .news__item').addClass('active');
+
+                    var x = sliderItem.getBoundingClientRect().left;
+                    var y = sliderItem.getBoundingClientRect().top;
+                    var width = sliderItem.getBoundingClientRect().width;
+                    var height = sliderItem.getBoundingClientRect().height;
+
+
+                    $('.item-bg').addClass('active');
+
+                }
+            }
+        });
+
+        swiper.on('touchEnd', function () {
+            $('.news__item').removeClass('active');
+            $('.swiper-slide-active .news__item').addClass('active');
+        });
+
+        swiper.on('slideChange', function () {
+            $('.news__item').removeClass('active');
+        });
+
+        swiper.on('slideChangeTransitionEnd', function () {
+            $('.news__item').removeClass('active');
+            var activeItem = document.querySelector('.swiper-slide-active');
+
+            var sliderItem = activeItem.querySelector('.news__item');
+
+            $('.swiper-slide-active .news__item').addClass('active');
+
+            var x = sliderItem.getBoundingClientRect().left;
+            var y = sliderItem.getBoundingClientRect().top;
+            var width = sliderItem.getBoundingClientRect().width;
+            var height = sliderItem.getBoundingClientRect().height;
+
+
+            $('.item-bg').addClass('active');
+        });
+
+
+
+// on mouseover
+    </script>
+</body>
+
+</html>

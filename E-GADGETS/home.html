@@ -1,0 +1,824 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+
+  <script>
+    //scroll to shop page
+
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+          e.preventDefault();
+          document.querySelector(this.getAttribute('href')).scrollIntoView({
+              behavior: 'smooth'
+          });
+      });
+  });
+
+
+
+
+
+    setInterval(function() {
+      document.getElementById("button_right").click();
+    }, 5000);
+
+
+
+    function searchFromProduct(){
+      var input, filter, table, tr, td, i, txtValue;
+
+      input = document.getElementById("myInput");
+      filter = input.value.toUpperCase();
+      table = document.getElementById("content");
+      tr = table.getElementsByTagName("div");
+
+      //to scroll when enter is pressed
+      input.addEventListener('keydown', function(event) {
+      if (event.key === 'Enter') {
+        window.scrollTo(0, document.body.scrollHeight/3.7);
+      }
+    });
+
+    //to scroll when button is pressed
+    var scrollButton = document.getElementById('Search');
+    scrollButton.addEventListener('click', function() {
+      window.scrollTo(0, document.body.scrollHeight/3.7);
+    });
+
+      //search main code
+      for (i = 0; i < tr.length; i++) {
+        td = tr[i].getElementsByTagName("h6")[0];
+        if (td) {
+          txtValue = td.textContent || td.innerText;
+          if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            tr[i].style.display = "";
+          } else {
+            tr[i].style.display = "none";
+          }
+        }
+      }
+    }
+
+
+  </script>
+
+
+
+
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <link rel="stylesheet" href="https://kit.fontawesome.com/ab8f278cc1.css" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/ab8f278cc1.js" crossorigin="anonymous"></script>
+
+  <title>E-Gadgets</title>
+
+  
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="bootstrap.css" />
+  <link href="/assets/vendor/nucleo/css/nucleo.css" rel="stylesheet">
+  <!-- core css -->
+  <link href="style.css" rel="stylesheet" />
+
+
+  <style>
+    #toaster {
+      position: fixed;
+      bottom: 10px;
+      right: 10px;
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      border-radius: 5px;
+      display: none;
+    }
+
+
+
+  </style>
+
+</head>
+
+<body>
+   <script>
+  //for scroll page to shop
+  document.querySelectorAll('a[href^="/user/user/dashboard/"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute('href'));
+          if (target) {
+              const targetTop = target.getBoundingClientRect().top + window.pageYOffset;
+              window.scrollTo({
+                  top: targetTop,
+                  behavior: 'smooth'
+              });
+          }
+      });
+  });
+
+
+
+
+  
+  setInterval(function() {
+    document.getElementById("button_right").click();
+  }, 5000);
+
+
+
+  function searchFromProduct(){
+    var input, filter, table, tr, td, i, txtValue;
+
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    table = document.getElementById("content");
+    tr = table.getElementsByTagName("div");
+
+    //to scroll when enter is pressed
+    input.addEventListener('keydown', function(event) {
+    if (event.key === 'Enter') {
+      window.scrollTo(0, document.body.scrollHeight/3.7);
+    }
+  });
+
+  //to scroll when button is pressed
+  var scrollButton = document.getElementById('Search');
+  scrollButton.addEventListener('click', function() {
+    window.scrollTo(0, document.body.scrollHeight/3.7);
+  });
+
+    //search main code
+    for (i = 0; i < tr.length; i++) {
+      td = tr[i].getElementsByTagName("h6")[0];
+      if (td) {
+        txtValue = td.textContent || td.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+          tr[i].style.display = "";
+        } else {
+          tr[i].style.display = "none";
+        }
+      }
+    }
+  }
+
+
+</script>
+
+<script>
+    function showToaster(message) {
+      var toaster = document.getElementById("toaster");
+      toaster.innerHTML = message;
+      toaster.style.display = "block";
+      setTimeout(function () {
+        toaster.style.display = "none";
+      }, 1800); // hide after 5 seconds
+    }
+  </script>
+
+
+
+
+    <!-- header section strats -->
+    <header class="header_section">
+
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg custom_nav-container ">
+
+          <a class="nav-logo" href="/user/user/dashboard/" >
+              <img src="\media\site\logo-2.png" class="logo">
+          </a>
+
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+
+              <li class="nav-item">
+                <a class="nav-link" href="/user/user/dashboard/">Home </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link"  href="/user/user/dashboard/#section-2"> Shop </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/user/user/about.html"> About </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/user/user/contact/">Contact Us</a>
+              </li>
+            </ul>
+            <div class="searchbar">
+              <div id="toaster"></div>
+              <input type="text" id="myInput" name="input" onkeydown="searchFromProduct()" placeholder="Search Here..." title="Enter The Name" />
+              <button id="Search" onclick="searchFromProduct()">
+                <i class="fa fa-search" aria-hidden="true"></i>
+              </button>
+            </div>
+
+
+
+
+            <div class="user_option-box" >
+              <a href="/user/cart">
+                <img src="\media\site\cart.png" style="max-height:25px;">
+              </a>
+              
+              <a href="/user/user_update/1">
+                <i class="fa fa-user" aria-hidden="true"></i>
+                karan
+              </a>
+              
+              <div class="burger" onclick="toggleNavbar()"><i class="fa-solid fa-bars fa-2xl"></i></div>
+            </div>
+          </div>
+          
+        </nav>
+      </div>
+      <center><div id="ul_2"></div></center>
+    </header>
+    <script>
+      function toggleNavbar() {
+          var navbar = document.querySelector('.navbar-nav')
+          var searchbar=document.querySelector('.searchbar')
+          var slider=document.querySelector('.pushdown')
+          
+          if (navbar.style.display === 'none' && searchbar.style.display === 'none') {
+              navbar.style.display = 'block';
+              searchbar.style.display ='block';
+              slider.style.paddingTop= '250px';
+          } else {
+              navbar.style.display = 'none';
+              searchbar.style.display ='none';
+              slider.style.paddingTop= '100px';
+          }
+      }
+    </script>
+    
+
+    <!-- end header section --> 
+    <!-- slider section -->
+    <section class="slider_section " >
+
+    <div class="container1 pushdown" style="padding-top: 100px;">
+
+      <div class="mySlides">
+          <img src="main_banner_1.png" class="image_1">
+          <div class="text_image">
+              <h1>X-box Wireless Controller</h1>
+              <center><div id="ul_1"></div></center>
+              <h3>Elevate your game</h3>
+              <pre>Featuring sculpted surfaces
+and refined geometry for enhanced
+comfort during gameplay.</pre>
+              <h3>Only For ₹5,390</h3>
+              <br>
+              <a href="/product/productdetail/10," class="add_to_cart"><b>SHOP NOW</b></a>
+          </div>
+      </div>
+      <button class="button_left" onclick="plusDivs(-1)"><i class="fa-solid fa-chevron-left fa-3x"></i></button>
+
+
+      <div class="mySlides">
+          <img src="main_banner_2.png" class="image_1">
+          <div class="text_image">
+              <h1>Beats Wireless Headphones</h1>
+            <center> <div id="ul_1"></div></center>
+              <h3>Feel the Music</h3>
+              <pre>Beats Solo3 Wireless delivers
+premium playback with fine-tuned
+acoustics that maximize clarity
+breadth, and balance.</pre>
+              <h3>Only For ₹16,260</h3>
+              <br>
+              <a href="/product/productdetail/11," class="add_to_cart"><b>SHOP NOW</b></a>
+
+          </div>
+      </div>
+      <button class="button_right" id="button_right" onclick="plusDivs(1)"><i class="fa-solid fa-chevron-right fa-3x"></i></button>
+  </div>
+  </section>
+    <!-- end slider section -->
+
+
+    <!--django shop section -->
+
+    <section class="shop_section layout_padding" id="section-2">
+      <div class="container">
+        <div class="heading_container heading_center">
+          <h2>
+            Exclusive
+          </h2>
+          <center><div id="ul_1"></div></center>
+        </div>
+
+
+        <div class="row" id="content">
+          <span id="notfound"></span>
+          
+          <div class="col-sm-6 col-xl-3" id="bus">
+            <div class="box">
+              <a href="/product/productdetail/1,">
+                <div class="img-box">
+                  <img src =\media\upload/w1_MgXKiNi.png>
+                </div>
+                <div class="det	ail-box" >
+                  <h6 id="productName">
+                    Samsung S23 Ultra
+                  </h6>
+                  <h6>
+                    <a title="Add to Cart" href="/user/cart/add/1/" class="addtocart"><i class="fa-solid fa-cart-plus"></i></a>
+                    <span style="position: absolute;right: 20px;"> ₹ 154999.0</span>
+                  </h6>
+
+                </div>
+                <div class="new">
+                  <span>
+                    New
+                  </span>
+                </div>
+              </a>
+            </div>
+          </div>
+          
+          <div class="col-sm-6 col-xl-3" id="bus">
+            <div class="box">
+              <a href="/product/productdetail/2,">
+                <div class="img-box">
+                  <img src =\media\upload/w2_lhWvCrC.png>
+                </div>
+                <div class="det	ail-box" >
+                  <h6 id="productName">
+                    Legion 7i Gen 7
+                  </h6>
+                  <h6>
+                    <a title="Add to Cart" href="/user/cart/add/2/" class="addtocart"><i class="fa-solid fa-cart-plus"></i></a>
+                    <span style="position: absolute;right: 20px;"> ₹ 329990.0</span>
+                  </h6>
+
+                </div>
+                <div class="new">
+                  <span>
+                    New
+                  </span>
+                </div>
+              </a>
+            </div>
+          </div>
+          
+          <div class="col-sm-6 col-xl-3" id="bus">
+            <div class="box">
+              <a href="/product/productdetail/3,">
+                <div class="img-box">
+                  <img src =\media\upload/w3_nrV7Lw5.png>
+                </div>
+                <div class="det	ail-box" >
+                  <h6 id="productName">
+                    Jbl Pulse 4
+                  </h6>
+                  <h6>
+                    <a title="Add to Cart" href="/user/cart/add/3/" class="addtocart"><i class="fa-solid fa-cart-plus"></i></a>
+                    <span style="position: absolute;right: 20px;"> ₹ 19499.0</span>
+                  </h6>
+
+                </div>
+                <div class="new">
+                  <span>
+                    New
+                  </span>
+                </div>
+              </a>
+            </div>
+          </div>
+          
+          <div class="col-sm-6 col-xl-3" id="bus">
+            <div class="box">
+              <a href="/product/productdetail/4,">
+                <div class="img-box">
+                  <img src =\media\upload/w4_69P7Aab.png>
+                </div>
+                <div class="det	ail-box" >
+                  <h6 id="productName">
+                    Apple Watch Series 7
+                  </h6>
+                  <h6>
+                    <a title="Add to Cart" href="/user/cart/add/4/" class="addtocart"><i class="fa-solid fa-cart-plus"></i></a>
+                    <span style="position: absolute;right: 20px;"> ₹ 50604.0</span>
+                  </h6>
+
+                </div>
+                <div class="new">
+                  <span>
+                    New
+                  </span>
+                </div>
+              </a>
+            </div>
+          </div>
+          
+          <div class="col-sm-6 col-xl-3" id="bus">
+            <div class="box">
+              <a href="/product/productdetail/5,">
+                <div class="img-box">
+                  <img src =\media\upload/w5_GuBeug0.png>
+                </div>
+                <div class="det	ail-box" >
+                  <h6 id="productName">
+                    OnePlus Buds Pro 2
+                  </h6>
+                  <h6>
+                    <a title="Add to Cart" href="/user/cart/add/5/" class="addtocart"><i class="fa-solid fa-cart-plus"></i></a>
+                    <span style="position: absolute;right: 20px;"> ₹ 11999.0</span>
+                  </h6>
+
+                </div>
+                <div class="new">
+                  <span>
+                    New
+                  </span>
+                </div>
+              </a>
+            </div>
+          </div>
+          
+          <div class="col-sm-6 col-xl-3" id="bus">
+            <div class="box">
+              <a href="/product/productdetail/6,">
+                <div class="img-box">
+                  <img src =\media\upload/w6_LPuV26I.png>
+                </div>
+                <div class="det	ail-box" >
+                  <h6 id="productName">
+                    SteelSeries Apex 3
+                  </h6>
+                  <h6>
+                    <a title="Add to Cart" href="/user/cart/add/6/" class="addtocart"><i class="fa-solid fa-cart-plus"></i></a>
+                    <span style="position: absolute;right: 20px;"> ₹ 4999.0</span>
+                  </h6>
+
+                </div>
+                <div class="new">
+                  <span>
+                    New
+                  </span>
+                </div>
+              </a>
+            </div>
+          </div>
+          
+          <div class="col-sm-6 col-xl-3" id="bus">
+            <div class="box">
+              <a href="/product/productdetail/7,">
+                <div class="img-box">
+                  <img src =\media\upload/w7_whs4hXB.png>
+                </div>
+                <div class="det	ail-box" >
+                  <h6 id="productName">
+                    Apple iPhone 14 Pro Max
+                  </h6>
+                  <h6>
+                    <a title="Add to Cart" href="/user/cart/add/7/" class="addtocart"><i class="fa-solid fa-cart-plus"></i></a>
+                    <span style="position: absolute;right: 20px;"> ₹ 189900.0</span>
+                  </h6>
+
+                </div>
+                <div class="new">
+                  <span>
+                    New
+                  </span>
+                </div>
+              </a>
+            </div>
+          </div>
+          
+          <div class="col-sm-6 col-xl-3" id="bus">
+            <div class="box">
+              <a href="/product/productdetail/8,">
+                <div class="img-box">
+                  <img src =\media\upload/w8_0r0DJaB_EdKOuC0.png>
+                </div>
+                <div class="det	ail-box" >
+                  <h6 id="productName">
+                    Sony Alpha 7 M4
+                  </h6>
+                  <h6>
+                    <a title="Add to Cart" href="/user/cart/add/8/" class="addtocart"><i class="fa-solid fa-cart-plus"></i></a>
+                    <span style="position: absolute;right: 20px;"> ₹ 213490.0</span>
+                  </h6>
+
+                </div>
+                <div class="new">
+                  <span>
+                    New
+                  </span>
+                </div>
+              </a>
+            </div>
+          </div>
+          
+          <div class="col-sm-6 col-xl-3" id="bus">
+            <div class="box">
+              <a href="/product/productdetail/9,">
+                <div class="img-box">
+                  <img src =\media\upload/w9_fDnxEV4.png>
+                </div>
+                <div class="det	ail-box" >
+                  <h6 id="productName">
+                    Logitech g502 x
+                  </h6>
+                  <h6>
+                    <a title="Add to Cart" href="/user/cart/add/9/" class="addtocart"><i class="fa-solid fa-cart-plus"></i></a>
+                    <span style="position: absolute;right: 20px;"> ₹ 15495.0</span>
+                  </h6>
+
+                </div>
+                <div class="new">
+                  <span>
+                    New
+                  </span>
+                </div>
+              </a>
+            </div>
+          </div>
+          
+          <div class="col-sm-6 col-xl-3" id="bus">
+            <div class="box">
+              <a href="/product/productdetail/10,">
+                <div class="img-box">
+                  <img src =\media\upload/w10_gsWiaGO.png>
+                </div>
+                <div class="det	ail-box" >
+                  <h6 id="productName">
+                    Xbox Wireless Controller
+                  </h6>
+                  <h6>
+                    <a title="Add to Cart" href="/user/cart/add/10/" class="addtocart"><i class="fa-solid fa-cart-plus"></i></a>
+                    <span style="position: absolute;right: 20px;"> ₹ 5395.0</span>
+                  </h6>
+
+                </div>
+                <div class="new">
+                  <span>
+                    New
+                  </span>
+                </div>
+              </a>
+            </div>
+          </div>
+          
+          <div class="col-sm-6 col-xl-3" id="bus">
+            <div class="box">
+              <a href="/product/productdetail/11,">
+                <div class="img-box">
+                  <img src =\media\upload/w11_YImiUpz.png>
+                </div>
+                <div class="det	ail-box" >
+                  <h6 id="productName">
+                    Beats Solo3
+                  </h6>
+                  <h6>
+                    <a title="Add to Cart" href="/user/cart/add/11/" class="addtocart"><i class="fa-solid fa-cart-plus"></i></a>
+                    <span style="position: absolute;right: 20px;"> ₹ 16260.0</span>
+                  </h6>
+
+                </div>
+                <div class="new">
+                  <span>
+                    New
+                  </span>
+                </div>
+              </a>
+            </div>
+          </div>
+          
+          <div class="col-sm-6 col-xl-3" id="bus">
+            <div class="box">
+              <a href="/product/productdetail/12,">
+                <div class="img-box">
+                  <img src =\media\upload/watch5pro1_zV16jkj.png>
+                </div>
+                <div class="det	ail-box" >
+                  <h6 id="productName">
+                    Samsung Galaxy Watch5 Pro
+                  </h6>
+                  <h6>
+                    <a title="Add to Cart" href="/user/cart/add/12/" class="addtocart"><i class="fa-solid fa-cart-plus"></i></a>
+                    <span style="position: absolute;right: 20px;"> ₹ 44999.0</span>
+                  </h6>
+
+                </div>
+                <div class="new">
+                  <span>
+                    New
+                  </span>
+                </div>
+              </a>
+            </div>
+          </div>
+          
+        </div>
+
+
+
+      </div>
+    </section>
+
+    <!--end django shop section -->
+
+
+
+
+
+  <!-- client section -->
+  <section class="client_section layout_padding">
+
+    <div class="container">
+      <div class="heading_container heading_center">
+        <h2>
+        Reviews
+        </h2>
+        <center><div id="ul_1"></div></center>
+      </div>
+      <div class="carousel-wrap ">
+        <div class="owl-carousel client_owl-carousel">
+          <div class="item">
+            <div class="box">
+              <div class="img-box">
+                <img src="\media\site\c1.jpg" alt="">
+              </div>
+              <div class="detail-box">
+                <div class="client_info">
+                  <div class="client_name">
+                    <h5>
+                      Mark Thomas
+                    </h5>
+                    <center><div id="ul_1"></div></center>
+                    <h6>
+                      Customer
+                    </h6>
+                  </div>
+                  <i class="fa fa-quote-left" aria-hidden="true"></i>
+                </div>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                  labore
+                  et
+                  dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                  aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                  cillum
+                  dolore eu fugia
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="box">
+              <div class="img-box">
+                <img src="\media\site\c2.jpg" alt="">
+              </div>
+              <div class="detail-box">
+                <div class="client_info">
+                  <div class="client_name">
+                    <h5>
+                      Alina Hans
+                    </h5>
+                    <center><div id="ul_1"></div></center>
+                    <h6>
+                      Customer
+                    </h6>
+                  </div>
+                  <i class="fa fa-quote-left" aria-hidden="true"></i>
+                </div>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                  labore
+                  et
+                  dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                  aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                  cillum
+                  dolore eu fugia
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end client section -->
+
+     <!-- footer section -->
+  <footer class="footer-20192">
+    <div class="site-section">
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-sm">
+            <a href="#" class="footer-logo">E-Gadgets</a>
+            <p class="copyright">
+              <small>&copy; 2023</small>
+            </p>
+            
+            <div>
+              <p style="text-transform: uppercase;">
+              <i class="fa fa-user" aria-hidden="true"> </i>
+              <span> karan</span>
+            </p>
+            <a href="/user/logout/" class="logout" >LOGOUT</a>
+            </a>
+          </div>
+          
+          </div>
+          <div class="col-sm">
+            <h3>Reach At..</h3>
+            <ul class="list-unstyled links">
+              <li><a href="">
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                <span>
+                  Location
+                </span>
+              </a></li>
+              <li><a href="">
+                <i class="fa fa-phone" aria-hidden="true"></i>
+                <span>
+                  Call +01 1234567890
+                </span>
+              </a></li>
+              <li>
+                <a href="">
+                  <i class="fa fa-envelope" aria-hidden="true"></i>
+                  <span>
+                    demo@gmail.com
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-sm">
+            <h3>Company</h3>
+            <ul class="list-unstyled links">
+              <li><a href="/user/user/dashboard/#section-2">Shop</a></li>
+              <li><a href="/user/user/about.html">About us</a></li>
+              <li><a href="/user/user/contact/">Contact us</a></li>
+              <li><a href="/user/user/dashboard/">Home</a></li>
+            </ul>
+          </div>
+          <div class="col-sm">
+            <h3>Further Information</h3>
+            <ul class="list-unstyled links">
+              <li><a href="#">Terms &amp; Conditions</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h3>Follow us</h3>
+            <ul class="list-unstyled social">
+              <li><a href="#"><span><i class="fa fa-facebook" aria-hidden="true"></span></i></a></li>
+              <li><a href="#"><span><i class="fa fa-twitter" aria-hidden="true"></span></i></a></li>
+              <li><a href="#"><span><i class="fa fa-linkedin" aria-hidden="true"></span></i></a></li>
+              <li><a href="#"><span><i class="fa fa-instagram" aria-hidden="true"></span></i></a></li>
+
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- footer section --> 
+
+
+  <script>
+    //slide images
+    var slideIndex = 1;
+    showDivs(slideIndex);
+
+    function plusDivs(n) {
+      showDivs(slideIndex += n);
+    }
+
+    function showDivs(n) {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    if (n > x.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = x.length}
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+    }
+    x[slideIndex-1].style.display = "block";
+    }
+
+</script>
+
+
+</body>
+
+</html>
