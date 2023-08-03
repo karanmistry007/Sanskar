@@ -291,8 +291,68 @@ function modelDisplay(){
   }
 }
 
+//for team animations
+
+// function team1(){
+//   x=document.querySelector(".team-icons-1").querySelectorAll(".team-icon");
+//   x.forEach(element => {
+//       element.style.display="flex";    
+//     } );
+//   }
+// function team1R(){
+//   x=document.querySelector(".team-icons-1").querySelectorAll(".team-icon");
+//   x.forEach(element => {
+//     setTimeout(() => {
+//       element.style.display="none";
+//     }, 800);  
+//     } );
+//   }
 
 
+// function team2(){
+//   x=document.querySelector(".team-icons-2").querySelectorAll(".team-icon");
+//   x.forEach(element => {
+//       element.style.display="flex";    
+//     } );
+//   }
+// function team2R(){
+//   x=document.querySelector(".team-icons-2").querySelectorAll(".team-icon");
+//   x.forEach(element => {
+//     setTimeout(() => {
+//       element.style.display="none";
+//     }, 1000);  
+//     } );
+//   }
+
+// function team3(){
+//   x=document.querySelector(".team-icons-3").querySelectorAll(".team-icon");
+//   x.forEach(element => {
+//       element.style.display="flex";    
+//     } );
+//   }
+// function team3R(){
+//   x=document.querySelector(".team-icons-3").querySelectorAll(".team-icon");
+//   x.forEach(element => {
+//     setTimeout(() => {
+//       element.style.display="none";
+//     }, 1000);  
+//     } );
+//   }
+
+// function team4(){
+//   x=document.querySelector(".team-icons-4").querySelectorAll(".team-icon");
+//   x.forEach(element => {
+//       element.style.display="flex";    
+//     } );
+//   }
+// function team4R(){
+//   x=document.querySelector(".team-icons-4").querySelectorAll(".team-icon");
+//   x.forEach(element => {
+//     setTimeout(() => {
+//       element.style.display="none";
+//     }, 1000);  
+//     } );
+//   }
 
 
 

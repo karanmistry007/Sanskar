@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- title -->
+    <title>Document</title>
+    <!-- tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/97238f579d.js" crossorigin="anonymous"></script>
+    <!-- css stylesheet  -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body class="overflow-x-hidden">
+
+    <!-- info section -->
+    <section id="info" class="">
+        <div class="info font-light flex gap-10 justify-around lg:justify-evenly p-2 text-2xl lg:text-base">
+            <div class="info-item">
+                <i class="fa-solid fa-phone text-[#35c6af]"></i>
+                <span class="hidden lg:inline">
+                    Call:+01 123455678990
+                </span>
+            </div>
+
+            <div class="info-item">
+                <i class="fa-solid fa-envelope text-[#35c6af]"></i>
+                <span class="hidden lg:inline">
+                    Email:demo@gmail.com
+                </span>
+            </div>
+
+            <div class="info-item">
+                <i class="fa-solid fa-location-dot text-[#35c6af]"></i>
+                <span class="hidden lg:inline">
+                    Location
+                </span>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- navbar section  -->
+    <header id="navbar" class="bg-[#35c6af]">
+        <nav
+            class="navbar mx-6 flex gap-5 2xl:gap-10 text-white justify-between lg:justify-start items-center text-sm sm:text-base">
+            <div class="logo bg-white  h-24 w-24 flex justify-center items-center">
+                <img class="max-h-20" src="images/logo.png" alt="">
+            </div>
+
+
+
+            <div class="nav-item flex-grow hidden lg:block">
+                <ul class="nav-list flex gap-5 2xl:gap-10">
+                    <li>
+                        <a href="">
+                            HOME
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            ABOUT
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            TREATMENT
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            DOCTORS
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            TESTIMONIAL
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            CONTACT US
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="nav-item  flex gap-5 2xl:gap-10 justify-center items-center">
+                <ul class="nav-list-2 gap-5 2xl:gap-10 hidden lg:flex">
+                    <li>
+                        <a href="">
+                            <i class="fa-solid fa-user"></i> <span>LOGIN</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fa-solid fa-user"></i> <span>SIGN UP</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </a>
+                    </li>
+                </ul>
+                <div class="burger block lg:hidden">
+                    <div class="line w-9 rounded-full h-1 bg-white m-1.5"></div>
+                    <div class="line w-9 rounded-full h-1 bg-white m-1.5"></div>
+                    <div class="line w-9 rounded-full h-1 bg-white m-1.5"></div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+
+    <!-- slider section  -->
+    <section id="slider" class="relative shadow-lg my-20 ">
+            <div class="slider-item-1 lg:max-w-4xl xl:max-w-5xl 2xl:max-w-6xl m-auto lg:m-auto">
+                <div class="mx-4 sm:mx-12  md:flex justify-evenly max-w-7xl xl:mx-auto">
+            <div class="slider-text md:w-[50%]">
+                <div
+                class="play-btn my-6 bg-[#35c6af] text-white w-14 h-14 flex justify-center items-center rounded-full">
+
+                        <i class="fa-solid fa-play"></i>
+                      </div>
+                      <h1 class="text-black text-4xl sm:text-5xl font-bold mt-6">
+                        MICO
+                      </h1>
+                <h1 class="text-[#35c6af] text-4xl sm:text-5xl font-bold mb-6">
+                    HOSPITAL
+                  </h1>
+                  <p class="text-zinc-600 my-6">
+                    when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
+                    distribution of letters, as opposed to
+                </p>
+                <button class="contact bg-black text-white px-10 py-2.5 rounded-md my-6">
+                  Contact Us
+                </button>
+              </div>
+              <div class="slider-image my-4 ">
+                <img class="max-h-[450px] mx-auto" src="images/slider-img.jpg" alt="">
+              </div>
+            </div>
+          </div>
+          
+      </section>
+
+
+
+    <!-- appointment section  -->
+    <section id="appointment" class="my-20">
+        <div class="appointment mx-3 md:mx-10 lg:max-w-4xl xl:max-w-5xl 2xl:max-w-6xl m-auto lg:m-auto">
+            <form action=""
+                class="from flex flex-col gap-5 justify-center shadow-[0px_0px_50px_-30px_rgba(0,0,0,0.75)] p-10">
+                <h1 class="text-2xl font-medium">
+                    BOOK <span class="text-[#35c6af]">APPOINTMENT</span>
+                    <div class="green-line block w-20 h-1 bg-[#35c6af] rounded-full">
+                    </div>
+                </h1>
+
+                <div class="row lg:flex gap-5 justify-around space-y-5 lg:space-y-0">
+                    <div class="col w-full">
+                        <h1>
+                            Patient Name
+                        </h1>
+                        <input type="text" name="pname" id=""
+                            class="h-10 px-2 w-full rounded-md text-[#35c6af] border border-[#35c6af] bg-transparent">
+                    </div>
+                    <div class="col w-full">
+                        <h1>
+                            Doctor's Name
+                        </h1>
+                        <select name="doctor" id=""
+                            class="h-10 w-full px-2 rounded-md  border text-[#35c6af] border-[#35c6af] bg-transparent">
+                            <option value="">Normal distribution</option>
+                            <option value="">Normal distribution</option>
+                            <option value="">Normal distribution</option>
+                        </select>
+                    </div>
+                    <div class="col w-full">
+                        <h1>
+                            Department's Name
+                        </h1>
+                        <select name="department" id=""
+                            class="h-10 w-full px-2 rounded-md  border text-[#35c6af] border-[#35c6af] bg-transparent">
+                            <option value="">Normal distribution</option>
+                            <option value="">Normal distribution</option>
+                            <option value="">Normal distribution</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="row lg:flex gap-5 justify-around space-y-5 lg:space-y-0">
+                    <div class="col w-full">
+                        <h1>
+                            Phone Number
+                        </h1>
+                        <input type="number" name="pname" id="" placeholder="XXXXXXXXXX"
+                            class="h-10 w-full placeholder:text-[#35c6af] px-2 rounded-md  border text-[#35c6af] border-[#35c6af] bg-transparent">
+                    </div>
+                    <div class="col w-full">
+                        <h1>
+                            Symptoms
+                        </h1>
+                        <input type="text" name="dname" id=""
+                            class="h-10 w-full rounded-md px-2 border text-[#35c6af] border-[#35c6af] bg-transparent">
+                    </div>
+                    <div class="col w-full">
+                        <h1>
+                            Choose Date
+                        </h1>
+                        <input type="date" name="depname" id="" value="2023-02-08"
+                            class="h-10 w-full px-2 rounded-md  border text-[#35c6af] border-[#35c6af] bg-transparent">
+                    </div>
+                </div>
+                <div class="submit">
+                    <button type="submit" class="submit bg-black text-white px-10 py-2.5 rounded-md">
+                        SUBMIT NOW
+                    </button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+
+    <!-- about section  -->
+    <section id="about" class="my-20">
+        <div
+            class="about mx-5 md:m-10 md:flex lg:max-w-4xl xl:max-w-5xl 2xl:max-w-6xl lg:m-auto justify-center items-center">
+            <div class="image md:w-1/2">
+                <img src="images/about-img.jpg" alt="">
+            </div>
+            <div class="text md:w-1/2">
+                <h1 class="text-3xl font-bold my-6">
+                    About <span class="text-[#35c6af]">Hospital</span>
+                </h1>
+                <p class="text-zinc-600 my-6">
+                    has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here',
+                    making it look like readable English. Many desktop publishing packages and web page editors has a
+                    more-or-less normal distribution of letters, as opposed to using 'Content here, content here',
+                    making it look like readable English. Many desktop publishing packages and web page editors
+                </p>
+                <button class="submit bg-black text-white px-10 py-2.5 rounded-md my-6">
+                    Read More
+                </button>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- hospital section  -->
+    <section id="hospital">
+        <div class="hospital">
+            <h1 class="text-3xl mx-2 font-bold my-6 text-center">
+                Hospital <span class="text-[#35c6af]">Treatment</span>
+            </h1>
+            <div
+                class="hospital-main mx-5 my-20 flex flex-col md:flex-row flex-wrap lg:flex-nowrap gap-10 justify-around lg:max-w-4xl xl:max-w-5xl 2xl:max-w-6xl lg:m-auto lg:my-20">
+                <div class="hos-item  sm:max-w-lg md:w-1/3 m-auto">
+                    <img src="images/t1.png" alt="">
+                    <h1 class="text-2xl font-medium my-5">
+                        Nephrologist Care
+                    </h1>
+                    <p class="my-5">
+                        alteration in some form, by injected humour, or randomised words which don't look even slightly
+                        e sure there isn't anything
+                    </p>
+                    <a href="" class="text-[#35c6af] my-5">
+                        READ MORE
+                    </a>
+                </div>
+
+                <div class="hos-item  sm:max-w-lg md:w-1/3 m-auto">
+                    <img src="images/t2.png" alt="">
+                    <h1 class="text-2xl font-medium my-5">
+                        Eye Care
+                    </h1>
+                    <p class="my-5">
+                        alteration in some form, by injected humour, or randomised words which don't look even slightly
+                        e sure there isn't anything
+                    </p>
+                    <a href="" class="text-[#35c6af] my-5">
+                        READ MORE
+                    </a>
+                </div>
+
+                <div class="hos-item  sm:max-w-lg md:w-1/3 m-auto">
+                    <img src="images/t3.png" alt="">
+                    <h1 class="text-2xl font-medium my-5">
+                        Pediatrician Clinic
+                    </h1>
+                    <p class="my-5">
+                        alteration in some form, by injected humour, or randomised words which don't look even slightly
+                        e sure there isn't anything
+                    </p>
+                    <a href="" class="text-[#35c6af] my-5">
+                        READ MORE
+                    </a>
+                </div>
+
+                <div class="hos-item  sm:max-w-lg md:w-1/3 m-auto">
+                    <img src="images/t4.png" alt="">
+                    <h1 class="text-2xl font-medium my-5">
+                        Parental Care
+                    </h1>
+                    <p class="my-5">
+                        alteration in some form, by injected humour, or randomised words which don't look even slightly
+                        e sure there isn't anything
+                    </p>
+                    <a href="" class="text-[#35c6af] my-5">
+                        READ MORE
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- our doctor section  -->
+    <section id="ourdoctor" class="bg-[#35c6af]">
+        <div class="ourdoctor">
+            <h1 class="text-3xl mx-2 font-bold my-6 text-center">
+                OUR <span class="text-white">DOCTORS</span>
+            </h1>
+            
+
+        </div>
+    </section>
+
+
+
+    <!-- testimonial section  -->
+    <!-- <section id="testimonial">
+        <div class="testimonial">
+
+        </div>
+    </section> -->
+
+
+
+    <!-- get in touch section  -->
+    <section id="getintouch">
+        <div class="getintouch mx-5 lg:max-w-4xl xl:max-w-5xl 2xl:max-w-6xl lg:m-auto">
+            <form action="" class="git-main md:flex justify-between">
+                <div class="git-item flex flex-col gap-5 md:w-1/2">
+                    <h1 class="text-3xl font-bold my-6">
+                        GET IN TOUCH
+                    </h1>
+                    <div class="name">
+                        <input type="text" name="name" id="" placeholder="Full Name"
+                            class="placeholder:text-[#35c6af] h-10 px-2 w-full  text-[#35c6af] border border-[#35c6af] bg-transparent">
+                    </div>
+                    <div class="email">
+                        <input type="email" name="email" id="" placeholder="Email"
+                            class="placeholder:text-[#35c6af] h-10 px-2 w-full  text-[#35c6af] border border-[#35c6af] bg-transparent">
+                    </div>
+                    <div class="number">
+                        <input type="number" name="number" id="" placeholder="Phone Number"
+                            class="placeholder:text-[#35c6af] h-10 px-2 w-full  text-[#35c6af] border border-[#35c6af] bg-transparent">
+                    </div>
+                    <div class="message">
+                        <textarea name="message" id="" placeholder="Message"
+                            class="placeholder:text-[#35c6af] h-28 pt-10 px-2 w-full  text-[#35c6af] border border-[#35c6af] bg-transparent"></textarea>
+                    </div>
+                    <button type="submit" class="w-40 h-14 bg-[#35c6af] font-bold text-white">
+                        SEND
+                    </button>
+                </div>
+                <div class="image flex justify-center md:justify-end items-center w-1/2 ">
+                    <img class="m-auto md:m-0" src="images/contact-img.jpg" alt="">
+                </div>
+            </form>
+        </div>
+    </section>
+
+
+
+
+    <!-- footer section  -->
+    <footer id="footer" class="bg-[#252525] text-white mt-20">
+        <div class="footer lg:max-w-4xl xl:max-w-5xl 2xl:max-w-6xl  text-center lg:text-start py-5 mx-5 md:mx-20 lg:mx-auto">
+            <div class="row flex flex-col sm:flex-row justify-center gap-5 items-center">
+                <div class="col bg-white  h-32 w-32 flex justify-center items-center">
+                    <img class="max-h-20" src="images/logo.png" alt="">
+                </div>
+                <div class="col w-11/12 flex justify-center items-center content-center">
+                    <div class="flex justify-between items-center border-b border-white w-full">
+                        <input type="email" name="" id="" placeholder="Your email"
+                            class="bg-transparent h-10 border-0 focus:outline-0 w-1/2">
+                        <button class="text-[#35c6af]">SUBSCRIBE</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row md:flex flex-wrap lg:flex-nowrap justify-evenly md:text-start">
+                <div class="col md:w-5/12">
+                    <h1 class="my-5 text-xl font-medium"><i class="fa-solid fa-square-full text-[#35c6af] text-base"></i> ADDRESS</h1>
+                    <ul class="flex flex-col gap-2">
+                        <li>
+                            <i class="fa-solid fa-location-dot"></i> <span>Location</span>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-phone"></i> <span>Call +01 1234567890</span>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-envelope"></i> <span>demo@gmail.com</span>
+                        </li>
+                    </ul>
+                    <div class="icons flex gap-5 text-[#35c6af] text-2xl justify-center md:justify-start my-10">
+                        <div class="facebook">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </div>
+                        <div class="twitter">
+                            <i class="fa-brands fa-twitter"></i>
+                        </div>
+                        <div class="linkedin">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </div>
+                        <div class="instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col md:w-5/12">
+                    <h1 class="my-5 text-xl font-medium"><i class="fa-solid fa-square-full text-[#35c6af] text-base"></i> USEFUL LINKS</h1>
+                    <ul class="flex flex-col gap-2">
+                        <li>
+                            <a href="">
+                                Home
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                About
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                Treatment
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                Doctors
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                Testimonial
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                Contact Us
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+
+
+                <div class="col md:w-5/12">
+                    <h1 class="my-5 text-xl font-medium"><i class="fa-solid fa-square-full text-[#35c6af] text-base"></i> LATEST POSTS</h1>
+                    <ul>
+                        <li class="flex flex-col md:flex-row items-center gap-5 my-5">
+                            <div class="post-img bg-white h-16 w-16 flex justify-center items-center">
+                                <img class=" h-12 w-auto" src="images/post1.jpg" alt="">
+                            </div>
+                            <p>
+                                Normal distribution
+                            </p>
+                        </li>
+
+                        <li class="flex flex-col md:flex-row   items-center gap-5 my-5">
+                            <div class="post-img bg-white h-16 w-16 flex justify-center items-center">
+                                <img class=" h-12 w-auto" src="images/post2.jpg" alt="">
+                            </div>
+                            <p>
+                                Normal distribution
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col md:w-5/12">
+                    <h1 class="my-5 text-xl font-medium"><i class="fa-solid fa-square-full text-[#35c6af] text-base"></i> NEWS</h1>
+                    <ul>
+                        <li class="flex flex-col md:flex-row  items-center gap-5 my-5">
+                            <div class="post-img bg-white h-16 w-16 flex justify-center items-center">
+                                <img class=" h-12 w-auto" src="images/post3.jpg" alt="">
+                            </div>
+                            <p>
+                                Normal distribution
+                            </p>
+                        </li>
+
+                        <li class="flex flex-col md:flex-row   items-center gap-5 my-5">
+                            <div class="post-img bg-white h-16 w-16 flex justify-center items-center">
+                                <img class=" h-12 w-auto" src="images/post4.png" alt="">
+                            </div>
+                            <p>
+                                Normal distribution
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="end my-5">
+                <h1>
+                    © 2023 All Rights Reserved By Free Html Templates
+                </h1>
+            </div>
+        </div>
+    </footer>
+
+    
+    <script src="main.js"></script>
+
+</body>
+
+</html>

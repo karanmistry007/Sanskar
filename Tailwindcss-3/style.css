@@ -1,0 +1,27 @@
+@keyframes slider-left {    
+    from{
+        transform: translateX(80%);
+        /* opacity: 0; */
+    } to{
+        transform: translateX(0px);
+        /* opacity: 1; */
+    }
+}
+@keyframes slider-right {    
+    from{
+        transform: translateX(-80%);
+        /* opacity: 0; */
+    } to{
+        transform: translateX(0px);
+        /* opacity: 1; */
+    }
+}
+
+.nature{
+    animation: slider-left 1s ease-out;
+}
+.nature{
+    animation-duration: 1s;
+}
+
+

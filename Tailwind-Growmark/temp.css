@@ -332,6 +332,9 @@
   opacity: 0;
 }
 
+.ser-item h1{
+  transition: all 0.4s ease-in-out;
+}
 .ser-item:hover h1 {
   color: #4761ff;
   transition: all 0.3s ease-in-out;
@@ -402,7 +405,7 @@
   transition: all 1s;
   transform: translate3d(0, 400px, 0);
   opacity: 0;
-  
+
 }
 
 .team-item:nth-child(2) {
@@ -461,6 +464,7 @@
   }
 
 }
+
 @keyframes from-bottom-rev {
   from {
     transform: translate(0%, 0%);
@@ -496,18 +500,19 @@
 }
 
 .ser-item:hover {
-  transform: translate(0%, -20px) !important;
-  transition: all 0.4s ease-in-out;
-
+  transform: translate(0%, -15px) !important;
 }
 
 .ser-item:hover .read-more {
-  display: block;
+  top: 100%
+}
+
+.ser-item {
+  transition: all 0.4s ease-in-out;
 }
 
 .read-more {
-  animation-name: from-top;
-  animation-duration: 0.4s;
+  transition: all 0.4s ease-in-out;
 }
 
 /* .news-slider:hover .news__item{
@@ -539,6 +544,7 @@
   animation: from-left-2;
   animation-duration: 0.3s;
 }
+
 .team-item:hover .team-icon:nth-child(2) {
   display: flex;
   animation-name: from-left-2;
@@ -609,33 +615,38 @@
   color: #ffffff;
   transition: all 0.3S ease-in-out;
 }
-.footer ul li{
-  cursor: pointer;
-}
-#team ul li{
+
+.footer ul li {
   cursor: pointer;
 }
 
-#model{
+#team ul li {
+  cursor: pointer;
+}
+
+#model {
   animation: 0.5s ease-in-out alternate;
 }
 
 @keyframes from-top-2 {
-  0%{
+  0% {
     transform: translateY(-500px);
     opacity: 0;
   }
-  100%{
+
+  100% {
     transform: translateX(0px);
     opacity: 1;
   }
 }
+
 @keyframes from-bottom-2 {
-  0%{
+  0% {
     transform: translateX(0px);
     opacity: 1;
   }
-  100%{
+
+  100% {
     transform: translateY(-500px);
     opacity: 0;
   }

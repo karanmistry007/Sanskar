@@ -112,5 +112,3 @@ swiper.on('slideChangeTransitionEnd', function () {
 });
 
 
-
-// on mouseover
