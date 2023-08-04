@@ -1,0 +1,148 @@
+a {
+    text-decoration: none !important;
+    color: rgb(74, 4, 78) !important;
+}
+
+.logo {
+    width: 120%;
+}
+
+#slider {
+    background: url(images/service-now-slide.jpg);
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#slider textarea {
+    height: 100px;
+}
+
+#help textarea {
+    height: 100px;
+}
+
+#help {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+/* #slider form{
+    max-width: 400px;
+} */
+
+#hire img {
+    width: 80%;
+}
+
+#why .why-img {
+    width: 50%;
+}
+
+#hire .hire-end {
+    width: 75%;
+}
+
+#business .row {
+    width: 75%;
+}
+
+#business img {
+    width: 75%;
+}
+
+#client .star {
+    width: 150px;
+}
+
+#client .ellipse {
+    width: 50px;
+}
+
+
+.icon {
+    width: 34px;
+    height: 34px;
+    border-radius: 100%;
+    color: white;
+    background: rgb(74, 4, 78) !important;
+    background: linear-gradient(280deg, rgba(74, 4, 78, 1) 0%, rgba(46, 16, 101, 1) 100%) !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: large;
+}
+
+.color-1 {
+    color: rgb(74, 4, 78) !important;
+}
+
+.btn-c {
+    width: 16px;
+    height: 16px;
+    border-radius: 100%;
+    background-color: rgb(53, 0, 53);
+}
+
+.w-90 {
+    width: 90% !important;
+}
+
+.gradient-1 {
+    background: rgb(98, 40, 119) !important;
+    background: linear-gradient(90deg, rgba(98, 40, 119, 1) 0%, rgba(177, 53, 185, 1) 35%) !important;
+}
+
+.gradient-2 {
+    background: rgb(74, 4, 78) !important;
+    background: linear-gradient(280deg, rgba(74, 4, 78, 1) 0%, rgba(46, 16, 101, 1) 100%) !important;
+}
+
+.line {
+    width: 1px !important;
+    height: 150px !important;
+    background: rgb(74, 4, 78) !important;
+    background: linear-gradient(280deg, rgba(74, 4, 78, 1) 0%, rgba(46, 16, 101, 1) 100%) !important;
+    padding: 0% !important;
+}
+
+.line-f {
+    width: 2px !important;
+    height: 20px !important;
+    background: rgb(74, 4, 78) !important;
+    background: linear-gradient(280deg, rgba(74, 4, 78, 1) 0%, rgba(46, 16, 101, 1) 100%) !important;
+    padding: 0% !important;
+}
+
+@media screen and (max-width:767px) {
+    .line {
+        width: 150px !important;
+        height: 1px !important;
+        background: rgb(74, 4, 78) !important;
+        background: linear-gradient(280deg, rgba(74, 4, 78, 1) 0%, rgba(46, 16, 101, 1) 100%) !important;
+        padding: 0% !important;
+    }
+
+    .why-img {
+        width: 80%;
+    }
+
+    .hire-end {
+        width: 90%;
+        font-size: 105% !important;
+    }
+
+    #business .row {
+        width: 90%;
+    }
+
+    #business img {
+        width: 50%;
+    }
+
+    .line-f {
+        display: none;
+    }
+
+}
