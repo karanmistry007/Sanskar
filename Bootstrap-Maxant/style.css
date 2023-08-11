@@ -147,6 +147,10 @@ a {
   box-shadow: 0px 0px 25px 5px rgba(0, 0, 0, 0.1);
   border-radius: 0.6rem;
 }
+#grid .col {
+  box-shadow: 0px 0px 25px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 0.6rem;
+}
 
 #cta {
   background-image: url(images/cta-bg.jpg);
@@ -290,6 +294,12 @@ i {
   .caro-img {
     width: auto !important;
   }
+  .carousel-caption {
+    top: 20vh;
+    left: 10% !important;
+    width: 65%;
+    margin: 5%;
+  }
 }
 @media screen and (max-width: 992px) {
   #header {
@@ -309,9 +319,7 @@ i {
     width: 70%;
     margin: 5%;
   }
-  #ul-1 {
-    width: 50%;
-  }
+
   .testi-img {
     border-radius: 1rem;
   }
@@ -323,14 +331,32 @@ i {
     width: 90%;
     text-align: center !important;
   }
-} /* @media screen and (max-width: 500px) {
-  .navbar-toggler {
+  #ul-1 {
+    width: 50%;
+  }
+  .testi-icon {
+    font-size: 2rem;
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+    color: white;
+    background-color: #00c96b;
+  }
+} 
+@media screen and (max-width: 500px) {
+  /* .navbar-toggler {
     padding: 0% !important;
   }
   .logo {
     margin-left: 0% !important;
+  } */
+  .testi-icon {
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    color: white;
+    background-color: #00c96b;
   }
-} */
+}
 @media screen and (max-width: 340px) {
   #grid .row div {
     flex-direction: column;
