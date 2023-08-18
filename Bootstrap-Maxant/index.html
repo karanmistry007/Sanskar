@@ -14,7 +14,7 @@
 
   <!-- Boostrap link  -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous" />
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
     integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
     crossorigin="anonymous"></script>
@@ -28,48 +28,49 @@
 
 <body>
   <header id="header">
-    <nav class="navbar navbar-expand-lg navbar-light z-3 w-100 p-0 pt-1 pb-1">
-      <div class="container-fluid flex-shrink-5">
-        <a class="navbar-brand mx-3  mx-xl-5 " href="#"><img class="mx-0 mx-sm-3  mx-xl-5  w-auto h-auto logo"
-            src="images/logo.png" alt=""></a>
+    <nav class="navbar container  navbar-expand-lg navbar-light z-3 w-100 p-0 pt-1 pb-1">
+      <div class="container-fluid flex-shrink-5 p-0 flex-nowrap  ">
+        <a class="navbar-brand mx-3  mx-md-0 " href="#">
+          <img class="logo" src="images/logo.png" alt="MEXANT"></a>
         <button class="navbar-toggler border-0 " id="burger-cont" type="button" data-bs-toggle="collapse"
           data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
           aria-label="Toggle navigation">
-          <div>
-            <div id="line-1" class="lines"></div>
-            <div id="line-2" class="lines"></div>
-            <div id="line-3" class="lines"></div>
-          </div>
+          <span>
+            <span id="line-1" class="lines"></span>
+            <span id="line-2" class="lines"></span>
+            <span id="line-3" class="lines"></span>
+          </span>
         </button>
       </div>
       <div class="container-fluid font-med">
-        <div class="collapse navbar-collapse align-content-center justify-content-evenly align-items-center"
+        <div class="collapse navbar-collapse align-content-center justify-content-end align-items-center"
           id="navbarNavDropdown">
           <ul class="navbar-nav text-center">
             <li class="nav-item mx-2 mx-xl-3">
-              <a class="nav-link  orange" id="home-btn" aria-current="page" href="#top">Home</a>
+              <a class="nav-link home-link  orange" id="home-btn" aria-current="page" href="#top">Home</a>
             </li>
             <li class="nav-item mx-2 mx-xl-3">
-              <a class="nav-link text-white orange" id="services-btn" href="#services-scroll">Services</a>
+              <a class="nav-link home-link text-white orange" id="services-btn" href="#grid">Services</a>
             </li>
             <li class="nav-item mx-2 mx-xl-3">
-              <a class="nav-link text-white orange" id="about-btn" href="#about-scroll">About</a>
+              <a class="nav-link home-link text-white orange" id="about-btn" href="#about">About</a>
             </li>
             <li class="nav-item dropdown  mx-2 mx-xl-3 ">
-              <a class="nav-link dropdown-toggle text-white orange" href="#" id="navbarDropdownMenuLink" role="button"
-                data-bs-toggle="dropdown" aria-expanded="false">
+              <a class="nav-link home-link dropdown-toggle text-white orange" href="#" id="navbarDropdownMenuLink"
+                role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Pages
               </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <li><a class="dropdown-item text-white text-center  font-med" href="#">About Us</a></li>
-                <li><a class="dropdown-item text-white text-center font-med" href="#">Our Services</a></li>
-                <li><a class="dropdown-item text-white text-center font-med" href="#">Contact Us</a></li>
+              <ul class="drop-main dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="drop-item dropdown-item text-white text-center  font-med" href="#">About Us</a></li>
+                <li><a class="drop-item dropdown-item text-white text-center font-med" href="#">Our Services</a></li>
+                <li><a class="drop-item dropdown-item text-white text-center font-med" href="#">Contact Us</a></li>
               </ul>
             </li>
             <li class="nav-item  mx-2 mx-xl-3">
-              <a class="nav-link text-white orange" id="testimonials-btn" href="#testimonials-scroll">Testimonials</a>
+              <a class="nav-link home-link text-white orange" id="testimonials-btn"
+                href="#testimonials">Testimonials</a>
             </li>
-            <li class="nav-item pb-3 pb-xl-0  mx-2 mx-xl-3">
+            <li class="nav-item pb-3 pb-xl-0 ms-3 ">
               <button type="button" class="btn btn-success">Contact Support</button>
             </li>
           </ul>
@@ -89,54 +90,67 @@
         <div class="carousel-inner">
           <div class="carousel-item active">
             <img src="images/slide-01.jpg" class="d-block caro-img" alt="...">
-            <div class="carousel-caption d-block align-middle text-center  text-md-start ">
-              <h1 class="caro-head"><b>Get <span class="orange">ready</span> for your business &
-                  upgrade <span class="orange">all aspects</span></b></h1>
-              <div class="m-auto mx-md-0  mt-5 mb-5 d-block" id="ul-1"></div>
-              <p class="d-none  d-md-block ">Mexant HTML5 Template is provided for free of charge. This
-                layout is based on Boostrap 5 CSS framework. Anyone can
-                download and edit for any professional website. Thank you for
-                visiting TemplateMo website.</p>
-              <div class="d-flex justify-content-center justify-content-md-start  ">
-                <button type="button" class="btn btn-success p-2 px-3">Discover More</button>
-                <button type="button" class="btn text-white bg-orange p-2 px-3 mx-3">Contact Us</button>
+
+            <div class="caro-text position-absolute top-0 left-0 d-flex flex-column justify-content-center text-white"
+              style="height: 100vh; width: 100vw;">
+              <div class=" d-block align-middle container  text-center  text-md-start ">
+                <h2 class="caro-head font-bolder">Get <span class="orange">ready</span> for your business &
+                  upgrade <span class="orange">all aspects</span></h2>
+                <div class="m-auto mx-md-0  mt-5 mb-5 d-block ul-1"></div>
+                <p class="d-none  d-md-block ">Mexant HTML5 Template is provided for free of charge. This
+                  layout is based on Boostrap 5 CSS framework. Anyone can
+                  download and edit for any professional website. Thank you for
+                  visiting TemplateMo website.</p>
+                <div class="d-flex justify-content-center justify-content-md-start gap-3 ">
+                  <button type="button" class="btn btn-success p-2 px-3">Discover More</button>
+                  <button type="button" class="btn text-white bg-orange p-2 px-3">Contact Us</button>
+                </div>
               </div>
             </div>
+
 
           </div>
           <div class="carousel-item">
             <img src="images/slide-02.jpg" class="d-block caro-img" alt="...">
-            <div class="carousel-caption d-block align-middle text-center  text-md-start">
-              <h1 class="caro-head"><b><span class="orange">Digital</span> Currency for you & Best
-                  upgrade <span class="orange">Crypto</span> Tips</b></h1>
-              <div class="m-auto mx-md-0  mt-5 mb-5 d-block" id="ul-1"></div>
-              <p class="d-none  d-md-block ">You will see a bunch of free CSS templates when you search on Google.
-                TemplateMo website is probably the
-                best one because it is 100% free. It does not ask you anything in return. You have a total freedom to
-                use any template for any purpose.</p>
-              <div class="d-flex justify-content-center justify-content-md-start  ">
-                <button type="button" class="btn btn-success p-2 px-3">Discover More</button>
-                <button type="button" class="btn text-white bg-orange p-2 px-3 mx-3">Contact Us</button>
+            <div class="caro-text position-absolute top-0 left-0 d-flex flex-column justify-content-center text-white"
+              style="height: 100vh; width: 100vw;">
+              <div class=" d-block align-middle container  text-center  text-md-start ">
+                <h2 class="caro-head font-bolder"><span class="orange">Digital</span> Currency for you & Best
+                  upgrade <span class="orange">Crypto</span> Tips</h2>
+                <div class="m-auto mx-md-0  mt-5 mb-5 d-block ul-1"></div>
+                <p class="d-none  d-md-block ">You will see a bunch of free CSS templates when you search on Google.
+                  TemplateMo website is probably the
+                  best one because it is 100% free. It does not ask you anything in return. You have a total freedom to
+                  use any template for any purpose.</p>
+                <div class="d-flex justify-content-center justify-content-md-start gap-3 ">
+                  <button type="button" class="btn btn-success p-2 px-3">Discover More</button>
+                  <button type="button" class="btn text-white bg-orange p-2 px-3">Contact Us</button>
+                </div>
               </div>
             </div>
           </div>
           <div class="carousel-item">
             <img src="images/slide-03.jpg" class="d-block caro-img" alt="...">
-            <div class="carousel-caption d-block align-middle text-center  text-md-start">
-              <h1 class="caro-head"><b>Best One in town & Crypto <span class="orange">Services</span></b></h1>
-              <div class="m-auto mx-md-0  mt-5 mb-5 d-block" id="ul-1"></div>
-              <p class="d-none  d-md-block ">When you browse through different tags on TemplateMo website, you can see a
-                variety of CSS templates
-                which are responsive website designs for different individual needs. Please tell your friends about our
-                website. Thank you.</p>
-              <div class="d-flex justify-content-center justify-content-md-start  ">
-                <button type="button" class="btn btn-success p-2 px-3">Discover More</button>
-                <button type="button" class="btn text-white bg-orange p-2 px-3 mx-3">Contact Us</button>
+            <div class="caro-text position-absolute top-0 left-0 d-flex flex-column justify-content-center text-white"
+              style="height: 100vh; width: 100vw;">
+              <div class=" d-block align-middle container  text-center  text-md-start ">
+                <h2 class="caro-head font-bolder">Best One in town & Crypto <span class="orange">Services</span></h2>
+                <div class="m-auto mx-md-0  mt-5 mb-5 d-block ul-1"></div>
+                <p class="d-none  d-md-block ">When you browse through different tags on TemplateMo website, you can see
+                  a
+                  variety of CSS templates
+                  which are responsive website designs for different individual needs. Please tell your friends about
+                  our
+                  website. Thank you.</p>
+                <div class="d-flex justify-content-center justify-content-md-start gap-3 ">
+                  <button type="button" class="btn btn-success p-2 px-3">Discover More</button>
+                  <button type="button" class="btn text-white bg-orange p-2 px-3">Contact Us</button>
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+        <button class="carousel-control-prev top-0" type="button" data-bs-target="#carouselExampleCaptions"
           data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Previous</span>
@@ -148,14 +162,13 @@
         </button>
       </div>
     </section>
-    <!-- grid section -->
 
-    <div id="services-scroll"></div>
-    <br><br>
-    <section class="my-5" id="grid">
+
+    <!-- grid section -->
+    <section class="mb-5 mt-3 py-lg-5" id="grid">
       <div class="container text-left">
-        <div class="row justify-content-between">
-          <div class="col d-flex align-items-center p-4 p-lg-5 m-3 ">
+        <div class="row justify-content-between w-100 m-auto mt-5">
+          <div class="col-md grid-item d-flex align-items-center p-4 p-lg-5 my-3 m-md-3 ">
             <div class="grid-icon display-3  mx-3 green">
               <i class="fas fa-archive"></i>
             </div>
@@ -166,7 +179,7 @@
               </p>
             </div>
           </div>
-          <div class="col d-flex align-items-center p-4 p-lg-5 m-3 ">
+          <div class="col-md grid-item d-flex align-items-center p-4 p-lg-5 my-3 m-auto m-md-3 ">
             <div class="grid-icon display-3 mx-3 green">
               <i class="fas fa-cloud"></i>
             </div>
@@ -178,8 +191,8 @@
             </div>
           </div>
         </div>
-        <div class="row justify-content-between">
-          <div class="col d-flex align-items-center p-4 p-lg-5 m-3 ">
+        <div class="row justify-content-between w-100 m-auto ">
+          <div class="col-md grid-item d-flex align-items-center p-4 p-lg-5 my-3 m-auto m-md-3 ">
             <div class="grid-icon display-3 mx-3 green">
               <i class="fas fa-charging-station"></i>
             </div>
@@ -191,7 +204,7 @@
               </p>
             </div>
           </div>
-          <div class="col d-flex align-items-center p-4 p-lg-5 m-3 ">
+          <div class="col-md grid-item d-flex align-items-center p-4 p-lg-5 my-3 m-auto m-md-3 ">
             <div class="grid-icon display-3 mx-3 green">
               <i class="fas fa-suitcase"></i>
             </div>
@@ -204,8 +217,8 @@
             </div>
           </div>
         </div>
-        <div class="row justify-content-between">
-          <div class="col d-flex align-items-center p-4 p-lg-5 m-3 ">
+        <div class="row justify-content-between w-100 m-auto">
+          <div class="col-md grid-item d-flex align-items-center p-4 p-lg-5 my-3 m-auto m-md-3 ">
             <div class="grid-icon display-3 mx-3 green">
               <i class="fas fa-archway"></i>
             </div>
@@ -217,7 +230,7 @@
               </p>
             </div>
           </div>
-          <div class="col d-flex align-items-center p-4 p-lg-5 m-3 ">
+          <div class="col-md grid-item d-flex align-items-center p-4 p-lg-5 my-3 m-auto m-md-3 ">
             <div class="grid-icon display-3 mx-3 green">
               <i class="fas fa-puzzle-piece"></i>
             </div>
@@ -235,37 +248,45 @@
 
 
     <!-- cta section  -->
-    <section class="my-5 " id="cta">
+    <section id="cta">
       <div class="container d-flex flex-column flex-md-row  justify-content-between align-items-center ">
-        <div class="cta-text text-white">
-          <h1><b>Business <span class="green">Solutions</span> and <span class="orange">Crypto</span> Invesments</b>
-          </h1>
+        <div class="cta-text text-white text-center text-md-start ">
+          <h2 class="display-6 fw-bold "><b>Business <span class="green">Solutions</span> and <span
+                class="orange">Crypto</span> Invesments</b>
+          </h2>
         </div>
-        <div class="cta-btn text-center ">
+        <div class="cta-btn text-center d-flex gap-3  justify-content-between">
           <button type="button" class="btn btn-success p-2 px-3">Discover More</button>
-          <button type="button" class="btn text-white bg-orange p-2 px-3 mx-3">Contact Us</button>
+          <button type="button" class="btn text-white bg-orange p-2 px-3">Contact Us</button>
         </div>
       </div>
     </section>
 
 
     <!-- about us section -->
-    <div id="about-scroll"></div>
-    <br><br>
-    <section id="about">
+    <section id="about" class="py-lg-5">
       <div class="container mt-5 mb-5 ">
         <div class="about-head text-center ">
           <h6 class="orange">ABOUT US</h6>
-          <h1 class="darkb">Know Us Better</h1>
+          <h2 class="darkb display-6 fw-bold ">Know Us Better</h2>
         </div>
         <div class="container">
-          <div class="row flex-column justify-content-between flex-md-row">
+          <div class="row flex-column justify-content-md-between  flex-md-row m-0 ">
             <div class="col col-lg-7 ">
-              <div id="about-btn"
-                class="d-flex flex-column flex-lg-row  justify-content-evenly align-content-between   align-items-center mx-5 my-4">
-                <button class="btn p-3 px-4 m-2 orange" id="btn-1" onclick="table1()">Web Design</button>
-                <button class="btn p-3 px-4 m-2 " id="btn-2" onclick="table2()">Graphics</button>
-                <button class="btn p-3 px-4 m-2  " id="btn-3" onclick="table3()">Web Coding</button>
+
+              <div class="my-3">
+                <div class="row gap-3 justify-content-center justify-content-sm-between  text-center ">
+                  <div class="col-sm p-0 ">
+                    <button class="btn btn-t px-2 py-3 orange fw-semibold" id="btn-1" onclick="table1()">Web
+                      Design</button>
+                  </div>
+                  <div class="col-sm p-0">
+                    <button class="btn btn-t px-2 py-3 fw-semibold" id="btn-2" onclick="table2()">Graphics</button>
+                  </div>
+                  <div class="col-sm p-0 ">
+                    <button class="btn btn-t px-2 py-3 fw-semibold" id="btn-3" onclick="table3()">Web Coding</button>
+                  </div>
+                </div>
               </div>
               <div class="overflow-x-auto d-flex justify-content-between   justify-content-sm-evenly w-100" id="tables">
 
@@ -369,23 +390,21 @@
                 </table>
               </div>
             </div>
-            <div class="col col-md-4 mt-5 ">
-              <h4 class="thick">
+            <div class="col col-md-4 mt-5 my-md-4">
+              <h4 class="fw-semibold mb-3 mb-md-5">
                 Please Tell us about your idea and how you want it to be
               </h4>
-              <br />
-              <p>
+              <p class="my-2 my-md-4">
                 You are allowed to use this template for your websites. You are
-                <span class="thick d-blue">Not allowed</span>
+                <span class="fw-semibold d-blue">Not allowed</span>
                 to redistribute the template zip file on any other template
                 websites.
               </p>
-              <br />
-              <p>
+              <p class="my-2 my-md-4">
                 Thank you for downloading and using our templates. Please tell
                 your friends about our website.
               </p>
-              <button type="button" class="btn btn-success p-2 px-3">Discover More</button>
+              <button type="button" class="btn btn-success p-2 px-3 my-4">Discover More</button>
             </div>
           </div>
         </div>
@@ -394,39 +413,38 @@
 
 
     <!-- calculator section          -->
-    <section id="calculator" class="">
-      <div class="container text-white  mt-lg-5  mb-5 ">
+    <section id="calculator" class="mt-lg-5">
+      <div class="container text-white mb-5 ">
         <div class="row">
           <div class="col d-none d-xl-block ">
-            <img class="" src="images/calculator-image.png" alt="">
+            <img src="images/calculator-image.png" alt="">
           </div>
           <div class="col-12  col-xl-4 ">
-            <form action="" class="calc">
-              <div class="container d-flex flex-wrap align-items-center align-content-center  justify-content-evenly">
-                <div class="row mt-4  mt-lg-5 ">
-                  <div class="col mt-lg-5">
-                    <h6 class="orange ">YOUR FREEDOM</h6>
-                    <h1><b> A Financial Plan</b></h1>
-                  </div>
+            <form action="submit" class="calc">
+              <div class="row mt-4  mt-lg-5 ">
+                <div class="col mt-lg-5">
+                  <h6 class="orange ">YOUR FREEDOM</h6>
+                  <h2 class="fw-bold "><b> A Financial Plan</b></h2>
                 </div>
-                <div class="row  gap-md-3 ">
-                  <div class="col-md px-md-0 my-3">
-                    <label>Your Name</label>
-                    <input type="text" name="name" class="form-control" required>
+              </div>
+              <div class="container d-flex flex-wrap align-items-center align-content-center p-0 ">
+                <div class="row  gap-md-3 w-100 m-auto ">
+                  <div class="col-md px-md-0 my-3 px-0">
+                    <label>Your Names</label>
+                    <input type="text" name="name" class="form-control w-100" required>
                   </div>
-                  <div class="col-md pr-md-0 my-3">
+                  <div class="col-md pr-md-0 my-3 px-0 ">
                     <label>Your Email</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                      placeholder="" required>
+                    <input type="email" class="form-control w-100" required>
                   </div>
                 </div>
-                <div class="row my-3 ">
+                <div class="row my-3 w-100 m-auto ">
                   <label>Subject</label>
-                  <input type="text" name="subject" class="form-control" required>
+                  <input type="text" name="subject" class="form-control w-100" required>
                 </div>
-                <div class="row my-3 ">
+                <div class="row my-3 w-100 m-auto ">
                   <label>Your Reason</label>
-                  <select name="select" id="select">
+                  <select name="select" class="w-100" id="select">
                     <option>Choose an option</option>
                     <option>Online Banking</option>
                     <option>Financial Control</option>
@@ -434,8 +452,8 @@
                     <option>Crypto Invesment</option>
                   </select>
                 </div>
-                <div class="row my-3 mw-140">
-                  <button type="submit" class="btn bg-orange text-white py-2 my-3 ">Submit Now</button>
+                <div class="my-3 mw-140 w-100">
+                  <button type="submit" class="btn bg-orange text-white py-2 px-4 my-3 ">Submit Now</button>
                 </div>
               </div>
             </form>
@@ -445,15 +463,13 @@
     </section>
 
     <!-- testimonials section  -->
-    <div id="testimonials-scroll"></div>
-    <br><br>
-    <section id="testimonials">
+    <section id="testimonials" class="pt-lg-5 pb-lg-3">
       <div class="mt-5 mb-5  container">
         <div class="row text-center">
           <h6 class="orange">TESTIMONIALS</h6>
-          <h1 class="darkb">What They Say</h1>
+          <h2 class="darkb display-6 fw-bold ">What They Say</h2>
         </div>
-        <div class="row text-start text-black   ">
+        <div class="row text-start text-black">
 
           <!-- Carousel -->
           <div id="demo" class="carousel slide" data-bs-ride="carousel">
@@ -468,9 +484,9 @@
             <!-- The slideshow/carousel -->
             <div class="carousel-inner container">
               <div class="carousel-item active">
-                <div class="container box-shadow rounded-3 my-5 w-90 ">
-                  <div class="row justify-content-evenly  align-items-center ">
-                    <div class="col p-4 p-sm-5 pb-4">
+                <div class="container box-shadow rounded-3 my-5 w-90 p-0 ">
+                  <div class="row justify-content-evenly  align-items-center w-100 m-0">
+                    <div class="col p-3  p-sm-5 py-4">
                       <i class="fa fa-quote-left testi-icon"></i>
                       <p class="mt-2">
                         “Donec et nunc massa. Nullam non felis dignissim, dapibus turpis semper, vulputate lorem. Nam
@@ -485,16 +501,16 @@
                       </h6>
 
                     </div>
-                    <div class="col-9 col-md-6  col-lg-5 col-xl-4 col-xxl-3 p-3 p-lg-0 ">
-                      <img class="w-100 testi-img" src="images/testimonials-01.jpg" alt="">
+                    <div class="col-9 col-md-6  col-lg-5 col-xl-4 col-xxl-3 p-3 p-lg-0 testi-img">
+                      <img src="images/testimonials-01.jpg" alt="">
                     </div>
                   </div>
                 </div>
               </div>
               <div class="carousel-item">
-                <div class="container box-shadow rounded-3 my-5 w-90 ">
-                  <div class="row justify-content-evenly  align-items-center ">
-                    <div class="col p-4 p-sm-5 pb-4 ">
+                <div class="container box-shadow rounded-3 my-5 w-90 p-0 ">
+                  <div class="row justify-content-evenly  align-items-center w-100 m-0">
+                    <div class="col p-3  p-sm-5 py-4">
                       <i class="fa fa-quote-left testi-icon"></i>
                       <p class="mt-2">
                         “Etiam id ligula risus. Fusce fringilla nisl nunc, nec rutrum lectus cursus nec. In blandit nibh
@@ -508,16 +524,16 @@
                       </h6>
 
                     </div>
-                    <div class="col-9 col-md-5  col-lg-5 col-xl-4 col-xxl-3 p-3 p-lg-0 ">
-                      <img class="w-100 testi-img" src="images/testimonials-01.jpg" alt="">
+                    <div class="col-9 col-md-5  col-lg-5 col-xl-4 col-xxl-3 p-3 p-lg-0 testi-img">
+                      <img src="images/testimonials-01.jpg" alt="">
                     </div>
                   </div>
                 </div>
               </div>
               <div class="carousel-item">
-                <div class="container box-shadow rounded-3 my-5 w-90 ">
-                  <div class="row justify-content-evenly  align-items-center ">
-                    <div class="col p-4 p-sm-5 pb-4 ">
+                <div class="container box-shadow rounded-3 my-5 w-90 p-0 ">
+                  <div class="row justify-content-evenly  align-items-center w-100 m-0">
+                    <div class="col p-3  p-sm-5 py-4">
                       <i class="fa fa-quote-left testi-icon"></i>
                       <p class="mt-2">
                         “Ut dictum vehicula massa, ac pharetra leo tincidunt eu. Phasellus in tristique magna, ac
@@ -531,8 +547,8 @@
                       </h6>
 
                     </div>
-                    <div class="col-9 col-md-6  col-lg-5 col-xl-4 col-xxl-3 p-3 p-lg-0 ">
-                      <img class="w-100 testi-img" src="images/testimonials-01.jpg" alt="">
+                    <div class="col-9 col-md-6  col-lg-5 col-xl-4 col-xxl-3 p-3 p-lg-0 testi-img">
+                      <img src="images/testimonials-01.jpg" alt="">
                     </div>
                   </div>
                 </div>
@@ -541,12 +557,11 @@
           </div>
         </div>
       </div>
-      </div>
-      </div>
     </section>
 
     <!-- company section  -->
     <section id="company" class="mt-5 py-4 ">
+      <h2 class="d-none ">Company</h2>
       <div
         class="container d-flex flex-column flex-lg-row justify-content-center align-content-center align-items-center py-5 text-center ">
         <div class="row w-100">
