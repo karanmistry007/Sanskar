@@ -15,13 +15,13 @@ function scrollFunction() {
     document.getElementById("header").style.backgroundColor = "#2b3044";
     document.getElementById("header").style.position = "fixed";
     document.getElementById("header").style.animationName = "nav-animation";
-    document.querySelector(".logo").style.maxHeight = "60px";
+    document.querySelector(".logo").querySelector("img").style.maxHeight = "60px";
     // document.getElementById("logo").style.backgroundColor = "red"
   } else {
     document.getElementById("header").style.backgroundColor = "transparent";
     document.getElementById("header").style.position = "absolute";
     document.getElementById("header").style.animationName = "ease-in-out";
-    document.querySelector(".logo").style.maxHeight = "initial";
+    document.querySelector(".logo").querySelector("img").style.maxHeight = "initial";
     // document.getElementById("logo").style.backgroundColor = "red"
   }
 }

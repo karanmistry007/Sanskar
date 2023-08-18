@@ -32,11 +32,11 @@
     </header>
 
     <!-- quote  -->
-    <section id="quote" class="bg-[url('images/service-now-slide.jpg')]  bg-cover bg-no-repeat  py-36 ">
+    <section id="quote" class="bg-[url('images/service-now-slide.jpg')]  bg-cover bg-no-repeat py-16 md:py-36 ">
         <div class="quote  w-[90%] lg:w-[75%] m-auto ">
 
             <div class="row flex flex-col gap-10 md:flex-row justify-between items-center mt-20">
-                <div class="col text-white w-[90%] md:w-[47%] text-center md:text-left">
+                <div class="col text-white w-full md:w-[47%] text-center md:text-left">
                     <h3 class="text-xl sm:text-3xl xl:text-4xl font-medium my-2">
                         GET ACCESS TO RELIABLE
                     </h3>
@@ -54,16 +54,16 @@
                 </div>
 
                 <div class="col w-[90%] md:w-[40%] xl:w-[30%]">
-                    <form action="" class="quote flex flex-col gap-5 bg-white p-6 text-sm rounded-md">
-                        <input type="text" name="name" id="" placeholder="Your Full Name*" required
+                    <form action="submit" class="quote flex flex-col gap-5 bg-white p-4 sm:p-6 text-sm rounded-md">
+                        <input type="text" name="name"  placeholder="Your Full Name*" required
                             class=" shadow-[0px_0px_10px_1px_rgba(0,0,0,0.2)] w-full p-2.5 placeholder:text-xs placeholder:text-gray-900">
-                        <input type="number" name="number" id="" placeholder="Phone*" required
+                        <input type="number" name="number"  placeholder="Phone*" required
                             class="shadow-[0px_0px_10px_1px_rgba(0,0,0,0.2)] w-full p-2.5 placeholder:text-xs placeholder:text-gray-900">
-                        <input type="email" name="email" id="" placeholder="Email*" required
+                        <input type="email" name="email"  placeholder="Email*" required
                             class="shadow-[0px_0px_10px_1px_rgba(0,0,0,0.2)] w-full p-2.5 placeholder:text-xs placeholder:text-gray-900">
-                        <input type="text" name="company" id="" placeholder="Company"
+                        <input type="text" name="company"  placeholder="Company"
                             class="shadow-[0px_0px_10px_1px_rgba(0,0,0,0.2)] w-full p-2.5 placeholder:text-xs placeholder:text-gray-900">
-                        <textarea name="message" id="" cols="30" rows="10" placeholder="Message"
+                        <textarea name="message"  cols="30" rows="10" placeholder="Message"
                             class="shadow-[0px_0px_10px_1px_rgba(0,0,0,0.2)] w-full h-20 p-2.5 placeholder:text-xs placeholder:text-gray-900"></textarea>
                         <button type="submit"
                             class="bg-gradient-to-l from-pink-700 to-fuchsia-900 text-white  py-5 my-2 rounded-md">
@@ -77,7 +77,7 @@
 
 
     <!-- build -->
-    <section id="build" class="my-20">
+    <section id="build" class="my-10 md:my-20">
         <div class="row">
             <div class="col build text-center w-[90%] lg:w-[55%] m-auto">
                 <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold xl:w-[90%] m-auto text-purple-950 my-10">
@@ -97,7 +97,7 @@
                     customers succeed in a competitive market.
                 </p>
                 <div class="build-img w-full sm:w-[95%] m-auto my-20">
-                    <img class="w-full align-middle" src="images/workflow-top-image .png" alt="">
+                    <img class="w-full align-middle" src="images/workflow-top-image.png" alt="">
                 </div>
 
             </div>
@@ -106,14 +106,14 @@
 
 
     <!-- ad -->
-    <section id="ad" class="bg-gradient-to-r from-violet-950 to-fuchsia-950 my-20">
-        <div class="ad py-20 w-[80%] m-auto">
-            <div class="row flex flex-col md:flex-row justify-between items-center text-white text-center md:text-left">
-                <div class="col w-full md:w-[45%]">
-                    <img class="w-full max-w-2xl" src="images/Advert ServiceNow - SANSKAR (1) .png" alt="">
+    <section id="ad" class="bg-gradient-to-r from-violet-950 to-fuchsia-950 my-10 md:my-20">
+        <div class="ad py-10 md:py-20 w-[80%] m-auto">
+            <div class="row flex flex-col lg:flex-row justify-between items-center text-white text-center lg:text-left">
+                <div class="col w-full lg:w-[45%]">
+                    <img class="w-full max-w-md m-auto lg:max-w-2xl" src="images/AdvertServiceNow-SANSKAR.png" alt="">
                 </div>
 
-                <div class="col w-full md:w-[45%]">
+                <div class="col w-full lg:w-[45%]">
                     <h1 class="text-3xl sm:text-4xl font-bold my-5">
                         Would you like to ease your business processes with ServiceNow?
                     </h1>
@@ -130,11 +130,11 @@
 
 
     <!-- hire -->
-    <section id="hire" class="my-20">
-        <div class="hire w-[80%] m-auto">
+    <section id="hire" class="my-10 md:my-20">
+        <div class="hire w-[90%] lg:w-[80%] m-auto lg:py-10">
             <div class="row flex flex-col lg:flex-row justify-between items-center text-center lg:text-left gap-5">
                 <div class="col w-full lg:w-[70%] xl:w-[48%]">
-                    <h1 class="hire text-3xl sm:text-5xl font-bold text-purple-950 my-10">
+                    <h1 class="hire text-3xl sm:text-5xl font-bold text-purple-950 mb-10">
                         Hire your ServiceNow developer in just one day!
                     </h1>
                     <p class="text-base sm:text-xl my-10">
@@ -149,7 +149,7 @@
                     </p>
                 </div>
                 <div class="col w-full lg:w-[50%] xl-[35%]">
-                    <img class="w-full max-w-lg m-auto" src="images/looking-to-hire.png" alt="">
+                    <img class="w-full max-w-sm lg:max-w-lg m-auto" src="images/looking-to-hire.png" alt="">
                 </div>
             </div>
         </div>
@@ -157,7 +157,7 @@
 
     <!-- why -->
     <section id="why" class="bg-slate-100 text-purple-950">
-        <div class="why text-center py-10 w-[80%]  xl:w-[60%] m-auto">
+        <div class="why text-center py-5 md:py-10 w-[90%] lg:w-[80%]  xl:w-[60%] m-auto">
             <h1 class="text-3xl sm:text-5xl font-bold text-purple-950 my-10">
                 Why choose us?
             </h1>
@@ -172,7 +172,7 @@
             <div
                 class="row max-w-sm m-auto md:max-w-none flex flex-col md:flex-row justify-center my-10 gap-10 items-center">
                 <div class="col">
-                    <img class="m-auto my-5" src="images/medal (1).svg" alt="">
+                    <img class="m-auto my-5" src="images/medal.svg" alt="">
                     <p class="my-5">
                         10+ years of expertise in implementing ServiceNow solutions for a variety of industries.
                     </p>
@@ -208,14 +208,14 @@
 
 
     <!-- different model -->
-    <section id="different" class="my-40">
+    <section id="different" class="my-10 md:my-20 lg:my-40">
         <div class="different w-[90%] lg:w-[75%] xl:w-[60%] m-auto">
-            <h1 class="text-3xl sm:text-5xl font-bold text-purple-950 my-10 text-center">
+            <h1 class="text-3xl sm:text-5xl font-bold text-purple-950 mb-5 md:my-10 text-center">
                 Different business models we have for your convenience!
             </h1>
 
             <div
-                class="row p-10 shadow-xl flex flex-col md:flex-row justify-between items-center gap-5 text-center md:text-left my-20">
+                class="row p-5 md:p-10 shadow-xl flex flex-col md:flex-row justify-between items-center gap-5 text-center md:text-left my-20">
                 <div class="col md:w-[65%]">
                     <h1 class="text-purple-950 text-2xl font-medium my-4">
                         STAFF AUGMENTATION
@@ -234,7 +234,7 @@
             </div>
 
             <div
-                class="row p-10 shadow-xl flex flex-col md:flex-row justify-between items-center gap-5 text-center md:text-left my-20">
+                class="row p-5 md:p-10 shadow-xl flex flex-col md:flex-row justify-between items-center gap-5 text-center md:text-left my-20">
                 <div class="col md:w-[65%] order-1  md:order-2">
                     <h1 class="text-purple-950 text-2xl font-medium my-4">
                         FIX COST
@@ -255,7 +255,7 @@
             </div>
 
             <div
-                class="row p-10 shadow-xl flex flex-col md:flex-row justify-between items-center gap-5 text-center md:text-left my-20 ">
+                class="row p-5 md:p-10 shadow-xl flex flex-col md:flex-row justify-between items-center gap-5 text-center md:text-left my-20 ">
                 <div class="col md:w-[65%]">
                     <h1 class="text-purple-950 text-2xl font-medium my-4">
                         HOURLY MODEL
@@ -269,7 +269,7 @@
                 </div>
 
                 <div class="col  w-[70%] md:w-[25%]">
-                    <img class="m-auto " src="images/time (1).svg" alt="">
+                    <img class="m-auto " src="images/time.svg" alt="">
                 </div>
             </div>
         </div>
@@ -285,8 +285,8 @@
 
             <div class="row text-white flex flex-col lg:flex-row justify-between gap-10 my-10">
                 <div
-                    class="col bg-gradient-to-tr from-purple-950 via-violet-950 to-purple-950 max-w-[450px] m-auto p-10">
-                    <img class="max-w-[150px] w-full mb-3" src="images/5 star.png" alt="">
+                    class="col bg-gradient-to-tr from-purple-950 via-violet-950 to-purple-950 max-w-[450px] m-auto p-5 md:p-10">
+                    <img class="max-w-[150px] w-full mb-3" src="images/5star.png" alt="">
                     <h3 class="text-xl font-medium my-3">
                         Excellent Provide service in here
                     </h3>
@@ -296,7 +296,7 @@
                     </p>
                     <div class="head flex gap-3 items-center">
                         <div class="circle">
-                            <img src="images/Ellipse 36.svg" alt="">
+                            <img src="images/Ellipse.svg" alt="">
                         </div>
                         <div class="name w-1/2">
                             <h1>
@@ -311,8 +311,8 @@
 
 
                 <div
-                    class="col bg-gradient-to-tr from-purple-950 via-violet-950 to-purple-950 max-w-[450px] m-auto p-10">
-                    <img class="max-w-[150px] w-full my-3" src="images/5 star.png" alt="">
+                    class="col bg-gradient-to-tr from-purple-950 via-violet-950 to-purple-950 max-w-[450px] m-auto p-5 md:p-10">
+                    <img class="max-w-[150px] w-full my-3" src="images/5star.png" alt="">
                     <h3 class="text-xl font-medium mb-3">
                         Excellent Provide service in here
                     </h3>
@@ -322,7 +322,7 @@
                     </p>
                     <div class="head flex gap-3 items-center">
                         <div class="circle">
-                            <img src="images/Ellipse 36.svg" alt="">
+                            <img src="images/Ellipse.svg" alt="">
                         </div>
                         <div class="name w-1/2">
                             <h1>
@@ -335,8 +335,8 @@
                     </div>
                 </div>
                 <div
-                    class="col bg-gradient-to-tr from-purple-950 via-violet-950 to-purple-950 max-w-[450px] m-auto p-10">
-                    <img class="max-w-[150px] w-full my-3" src="images/5 star.png" alt="">
+                    class="col bg-gradient-to-tr from-purple-950 via-violet-950 to-purple-950 max-w-[450px] m-auto p-5 md:p-10">
+                    <img class="max-w-[150px] w-full my-3" src="images/5star.png" alt="">
                     <h3 class="text-xl font-medium mb-3">
                         Excellent Provide service in here
                     </h3>
@@ -346,7 +346,7 @@
                     </p>
                     <div class="head flex gap-3 items-center">
                         <div class="circle">
-                            <img src="images/Ellipse 36.svg" alt="">
+                            <img src="images/Ellipse.svg" alt="">
                         </div>
                         <div class="name w-1/2">
                             <h1>
@@ -372,12 +372,12 @@
 
 
     <!-- help  -->
-    <section id="help" class="bg-gradient-to-tr from-purple-950 to-violet-950 py-36 my-20 ">
+    <section id="help" class="bg-gradient-to-tr from-purple-950 to-violet-950 py-16 md:py-36 my-10 md:my-20 ">
         <div class="help w-[90%] lg:w-[75%] m-auto ">
 
             <div class="row flex flex-col gap-10 md:flex-row justify-between items-center ">
                 <div class="col text-white w-[90%] md:w-[47%] text-center md:text-left">
-                    <img class="w-[60%] m-auto md:m-0" src="images/help-section .png" alt="">
+                    <img class="w-[60%] max-w-[15rem] m-auto md:m-0" src="images/help-section.png" alt="">
                     <h3 class="text-2xl sm:text-3xl lg:text-4xl font-bold my-2">
                         Let Us Help You in Taking your Business Next Level!
                     </h3>
@@ -388,16 +388,16 @@
                 </div>
 
                 <div class="col w-[90%] md:w-[40%] xl:w-[30%]">
-                    <form action="" class="quote flex flex-col gap-5 bg-white p-6 text-sm rounded-md">
-                        <input type="text" name="name" id="" placeholder="Your Full Name*" required
+                    <form action="submit" class="quote flex flex-col gap-5 bg-white  p-4 sm:p-6 text-sm rounded-md">
+                        <input type="text" name="name"  placeholder="Your Full Name*" required
                             class=" shadow-[0px_0px_10px_1px_rgba(0,0,0,0.2)] w-full p-2.5 placeholder:text-xs placeholder:text-gray-900">
-                        <input type="number" name="number" id="" placeholder="Phone*" required
+                        <input type="number" name="number"  placeholder="Phone*" required
                             class="shadow-[0px_0px_10px_1px_rgba(0,0,0,0.2)] w-full p-2.5 placeholder:text-xs placeholder:text-gray-900">
-                        <input type="email" name="email" id="" placeholder="Email*" required
+                        <input type="email" name="email"  placeholder="Email*" required
                             class="shadow-[0px_0px_10px_1px_rgba(0,0,0,0.2)] w-full p-2.5 placeholder:text-xs placeholder:text-gray-900">
-                        <input type="text" name="company" id="" placeholder="Company"
+                        <input type="text" name="company"  placeholder="Company"
                             class="shadow-[0px_0px_10px_1px_rgba(0,0,0,0.2)] w-full p-2.5 placeholder:text-xs placeholder:text-gray-900">
-                        <textarea name="message" id="" cols="30" rows="10" placeholder="Message"
+                        <textarea name="message"  cols="30" rows="10" placeholder="Message"
                             class="shadow-[0px_0px_10px_1px_rgba(0,0,0,0.2)] w-full h-20 p-2.5 placeholder:text-xs placeholder:text-gray-900"></textarea>
                         <button type="submit"
                             class="bg-gradient-to-l from-pink-700 to-fuchsia-900 text-white  py-5 my-2 rounded-md">
@@ -424,25 +424,25 @@
                         <a href="">Web Design</a>
                     </li>
 
-                    <div class="line hidden lg:block  h-4 w-0.5 bg-purple-950"></div>
+                    <li class="line hidden lg:block  h-4 w-0.5 bg-purple-950"></li>
 
                     <li>
                         <a href="">Web Development</a>
                     </li>
 
-                    <div class="line hidden lg:block  h-4 w-0.5 bg-purple-950"></div>
+                    <li class="line hidden lg:block  h-4 w-0.5 bg-purple-950"></li>
 
                     <li>
                         <a href="">CRM</a>
                     </li>
 
-                    <div class="line hidden lg:block  h-4 w-0.5 bg-purple-950"></div>
+                    <li class="line hidden lg:block  h-4 w-0.5 bg-purple-950"></li>
 
                     <li>
                         <a href="">ERP</a>
                     </li>
 
-                    <div class="line hidden lg:block  h-4 w-0.5 bg-purple-950"></div>
+                    <li class="line hidden lg:block  h-4 w-0.5 bg-purple-950"></li>
 
                     <li>
                         <a href="">Ecommerce Services</a>
@@ -457,25 +457,25 @@
                         <a href="">Shopifiy Developers</a>
                     </li>
 
-                    <div class="line hidden lg:block  h-4 w-0.5 bg-purple-950"></div>
+                    <li class="line hidden lg:block  h-4 w-0.5 bg-purple-950"></li>
 
                     <li>
                         <a href="">Magento Development</a>
                     </li>
 
-                    <div class="line hidden lg:block  h-4 w-0.5 bg-purple-950"></div>
+                    <li class="line hidden lg:block  h-4 w-0.5 bg-purple-950"></li>
 
                     <li>
                         <a href="">Woo Commerce Developers</a>
                     </li>
 
-                    <div class="line hidden lg:block  h-4 w-0.5 bg-purple-950"></div>
+                    <li class="line hidden lg:block  h-4 w-0.5 bg-purple-950"></li>
 
                     <li>
                         <a href="">E-commerce Mobile App Developers</a>
                     </li>
 
-                    <div class="line hidden lg:block  h-4 w-0.5 bg-purple-950"></div>
+                    <li class="line hidden lg:block  h-4 w-0.5 bg-purple-950"></li>
 
                     <li>
                         <a href="">Drupal Developers</a>

@@ -381,7 +381,7 @@ button:not(:disabled) {
       position: initial;
     }
 
-    .logo {
+    .logo img{
       max-width: 75%;
       max-height: 100% !important;
     }
@@ -450,7 +450,7 @@ button:not(:disabled) {
     /* .navbar-toggler {
     padding: 0% !important;
   }
-  .logo {
+  .logo img{
     margin-left: 0% !important;
   } */
     .testi-icon {
@@ -480,7 +480,7 @@ button:not(:disabled) {
   }
 
   /* @media screen and (max-width:412px) {
-    .logo{
+    .logo img{
         max-width: 45%;
     }
 } */
